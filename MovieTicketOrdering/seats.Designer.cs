@@ -1,6 +1,6 @@
 ﻿namespace MovieTicketOrdering
 {
-    partial class Form1
+    partial class seats
     {
         /// <summary>
         /// Required designer variable.
@@ -37,4 +37,3 @@
         #endregion
     }
 }
-
