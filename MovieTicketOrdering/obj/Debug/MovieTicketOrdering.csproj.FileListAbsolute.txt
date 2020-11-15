@@ -1,0 +1,11 @@
+F:\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\bin\Debug\MovieTicketOrdering.exe.config
+F:\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\bin\Debug\MovieTicketOrdering.exe
+F:\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\bin\Debug\MovieTicketOrdering.pdb
+F:\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\obj\Debug\MovieTicketOrdering.csprojAssemblyReference.cache
+F:\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\obj\Debug\MovieTicketOrdering.mainMenu.resources
+F:\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\obj\Debug\MovieTicketOrdering.Properties.Resources.resources
+F:\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\obj\Debug\MovieTicketOrdering.seats.resources
+F:\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\obj\Debug\MovieTicketOrdering.csproj.GenerateResource.cache
+F:\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\obj\Debug\MovieTicketOrdering.csproj.CoreCompileInputs.cache
+F:\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\obj\Debug\MovieTicketOrdering.exe
+F:\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\obj\Debug\MovieTicketOrdering.pdb
