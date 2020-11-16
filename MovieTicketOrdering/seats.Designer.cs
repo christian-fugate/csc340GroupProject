@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.seat100 = new System.Windows.Forms.Button();
             this.seat103 = new System.Windows.Forms.Button();
             this.seat104 = new System.Windows.Forms.Button();
             this.seat96 = new System.Windows.Forms.Button();
@@ -132,12 +133,13 @@
             this.seat5 = new System.Windows.Forms.Button();
             this.seat3 = new System.Windows.Forms.Button();
             this.seat1 = new System.Windows.Forms.Button();
-            this.seat100 = new System.Windows.Forms.Button();
+            this.clear = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.clear);
             this.panel1.Controls.Add(this.seat100);
             this.panel1.Controls.Add(this.seat103);
             this.panel1.Controls.Add(this.seat104);
@@ -247,6 +249,16 @@
             this.panel1.Size = new System.Drawing.Size(816, 497);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // seat100
+            // 
+            this.seat100.Location = new System.Drawing.Point(428, 364);
+            this.seat100.Name = "seat100";
+            this.seat100.Size = new System.Drawing.Size(34, 23);
+            this.seat100.TabIndex = 318;
+            this.seat100.Text = "100";
+            this.seat100.UseVisualStyleBackColor = true;
+            this.seat100.Click += new System.EventHandler(this.seat100_Click);
             // 
             // seat103
             // 
@@ -708,12 +720,13 @@
             // 
             // seat61
             // 
+            this.seat61.BackColor = System.Drawing.Color.Gainsboro;
             this.seat61.Location = new System.Drawing.Point(329, 280);
             this.seat61.Name = "seat61";
             this.seat61.Size = new System.Drawing.Size(27, 23);
             this.seat61.TabIndex = 272;
             this.seat61.Text = "61";
-            this.seat61.UseVisualStyleBackColor = true;
+            this.seat61.UseVisualStyleBackColor = false;
             this.seat61.Click += new System.EventHandler(this.seat61_Click);
             // 
             // seat52
@@ -1151,12 +1164,13 @@
             // 
             // seat18
             // 
+            this.seat18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.seat18.Location = new System.Drawing.Point(362, 166);
             this.seat18.Name = "seat18";
             this.seat18.Size = new System.Drawing.Size(27, 23);
             this.seat18.TabIndex = 229;
             this.seat18.Text = "18";
-            this.seat18.UseVisualStyleBackColor = true;
+            this.seat18.UseVisualStyleBackColor = false;
             this.seat18.Click += new System.EventHandler(this.seat18_Click);
             // 
             // seat16
@@ -1309,15 +1323,15 @@
             this.seat1.UseVisualStyleBackColor = true;
             this.seat1.Click += new System.EventHandler(this.seat1_Click);
             // 
-            // seat100
+            // clear
             // 
-            this.seat100.Location = new System.Drawing.Point(428, 364);
-            this.seat100.Name = "seat100";
-            this.seat100.Size = new System.Drawing.Size(34, 23);
-            this.seat100.TabIndex = 318;
-            this.seat100.Text = "100";
-            this.seat100.UseVisualStyleBackColor = true;
-            this.seat100.Click += new System.EventHandler(this.seat100_Click);
+            this.clear.Location = new System.Drawing.Point(15, 166);
+            this.clear.Name = "clear";
+            this.clear.Size = new System.Drawing.Size(103, 23);
+            this.clear.TabIndex = 319;
+            this.clear.Text = "Clear Selection";
+            this.clear.UseVisualStyleBackColor = true;
+            this.clear.Click += new System.EventHandler(this.clear_Click);
             // 
             // seats
             // 
@@ -1440,5 +1454,6 @@
         private System.Windows.Forms.Button seat3;
         private System.Windows.Forms.Button seat1;
         private System.Windows.Forms.Button seat100;
+        private System.Windows.Forms.Button clear;
     }
 }
