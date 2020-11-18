@@ -9,3 +9,7 @@ F:\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\obj\Debug\MovieTicket
 F:\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\obj\Debug\MovieTicketOrdering.csproj.CoreCompileInputs.cache
 F:\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\obj\Debug\MovieTicketOrdering.exe
 F:\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\obj\Debug\MovieTicketOrdering.pdb
+F:\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\bin\Debug\MySql.Data.dll
+F:\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\bin\Debug\Ubiety.Dns.Core.dll
+F:\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\bin\Debug\MySql.Data.xml
+F:\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\obj\Debug\MovieTicketOrdering.csproj.CopyComplete

@@ -14,6 +14,7 @@ namespace MovieTicketOrdering
     {
         List<int> choosen = new List<int>();
         List<int> taken = new List<int>();
+        order order = new order();
         public seats()
         {
             InitializeComponent();
@@ -22,10 +23,7 @@ namespace MovieTicketOrdering
 
         private void seats_Load(object sender, EventArgs e)
         {
-            taken.Add(104);
-            taken.Add(70);
-            taken.Add(30);
-
+            taken = order.getSeats();
             updateTaken();
         }
         private void updateTaken()
