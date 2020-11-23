@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.clear = new System.Windows.Forms.Button();
             this.seat100 = new System.Windows.Forms.Button();
             this.seat103 = new System.Windows.Forms.Button();
             this.seat104 = new System.Windows.Forms.Button();
@@ -133,7 +134,6 @@
             this.seat5 = new System.Windows.Forms.Button();
             this.seat3 = new System.Windows.Forms.Button();
             this.seat1 = new System.Windows.Forms.Button();
-            this.clear = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -244,17 +244,30 @@
             this.panel1.Controls.Add(this.seat5);
             this.panel1.Controls.Add(this.seat3);
             this.panel1.Controls.Add(this.seat1);
-            this.panel1.Location = new System.Drawing.Point(120, 32);
+            this.panel1.Location = new System.Drawing.Point(160, 39);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(816, 497);
+            this.panel1.Size = new System.Drawing.Size(1088, 612);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // clear
+            // 
+            this.clear.Location = new System.Drawing.Point(20, 204);
+            this.clear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.clear.Name = "clear";
+            this.clear.Size = new System.Drawing.Size(137, 28);
+            this.clear.TabIndex = 319;
+            this.clear.Text = "Clear Selection";
+            this.clear.UseVisualStyleBackColor = true;
+            this.clear.Click += new System.EventHandler(this.clear_Click);
+            // 
             // seat100
             // 
-            this.seat100.Location = new System.Drawing.Point(428, 364);
+            this.seat100.Location = new System.Drawing.Point(571, 448);
+            this.seat100.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat100.Name = "seat100";
-            this.seat100.Size = new System.Drawing.Size(34, 23);
+            this.seat100.Size = new System.Drawing.Size(45, 28);
             this.seat100.TabIndex = 318;
             this.seat100.Text = "100";
             this.seat100.UseVisualStyleBackColor = true;
@@ -262,9 +275,10 @@
             // 
             // seat103
             // 
-            this.seat103.Location = new System.Drawing.Point(544, 364);
+            this.seat103.Location = new System.Drawing.Point(725, 448);
+            this.seat103.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat103.Name = "seat103";
-            this.seat103.Size = new System.Drawing.Size(35, 23);
+            this.seat103.Size = new System.Drawing.Size(47, 28);
             this.seat103.TabIndex = 317;
             this.seat103.Text = "103";
             this.seat103.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -273,9 +287,10 @@
             // 
             // seat104
             // 
-            this.seat104.Location = new System.Drawing.Point(585, 364);
+            this.seat104.Location = new System.Drawing.Point(780, 448);
+            this.seat104.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat104.Name = "seat104";
-            this.seat104.Size = new System.Drawing.Size(35, 23);
+            this.seat104.Size = new System.Drawing.Size(47, 28);
             this.seat104.TabIndex = 316;
             this.seat104.Text = "104";
             this.seat104.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -284,9 +299,10 @@
             // 
             // seat96
             // 
-            this.seat96.Location = new System.Drawing.Point(296, 365);
+            this.seat96.Location = new System.Drawing.Point(395, 449);
+            this.seat96.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat96.Name = "seat96";
-            this.seat96.Size = new System.Drawing.Size(27, 23);
+            this.seat96.Size = new System.Drawing.Size(36, 28);
             this.seat96.TabIndex = 315;
             this.seat96.Text = "96";
             this.seat96.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -295,9 +311,10 @@
             // 
             // seat102
             // 
-            this.seat102.Location = new System.Drawing.Point(503, 366);
+            this.seat102.Location = new System.Drawing.Point(671, 450);
+            this.seat102.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat102.Name = "seat102";
-            this.seat102.Size = new System.Drawing.Size(35, 23);
+            this.seat102.Size = new System.Drawing.Size(47, 28);
             this.seat102.TabIndex = 314;
             this.seat102.Text = "102";
             this.seat102.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -306,9 +323,10 @@
             // 
             // seat92
             // 
-            this.seat92.Location = new System.Drawing.Point(560, 339);
+            this.seat92.Location = new System.Drawing.Point(747, 417);
+            this.seat92.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat92.Name = "seat92";
-            this.seat92.Size = new System.Drawing.Size(27, 23);
+            this.seat92.Size = new System.Drawing.Size(36, 28);
             this.seat92.TabIndex = 313;
             this.seat92.Text = "92";
             this.seat92.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -317,9 +335,10 @@
             // 
             // seat95
             // 
-            this.seat95.Location = new System.Drawing.Point(263, 367);
+            this.seat95.Location = new System.Drawing.Point(351, 452);
+            this.seat95.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat95.Name = "seat95";
-            this.seat95.Size = new System.Drawing.Size(27, 23);
+            this.seat95.Size = new System.Drawing.Size(36, 28);
             this.seat95.TabIndex = 312;
             this.seat95.Text = "95";
             this.seat95.UseVisualStyleBackColor = true;
@@ -327,9 +346,10 @@
             // 
             // seat101
             // 
-            this.seat101.Location = new System.Drawing.Point(461, 366);
+            this.seat101.Location = new System.Drawing.Point(615, 448);
+            this.seat101.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat101.Name = "seat101";
-            this.seat101.Size = new System.Drawing.Size(36, 23);
+            this.seat101.Size = new System.Drawing.Size(48, 28);
             this.seat101.TabIndex = 311;
             this.seat101.Text = "101";
             this.seat101.UseVisualStyleBackColor = true;
@@ -337,9 +357,10 @@
             // 
             // seat93
             // 
-            this.seat93.Location = new System.Drawing.Point(197, 367);
+            this.seat93.Location = new System.Drawing.Point(263, 452);
+            this.seat93.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat93.Name = "seat93";
-            this.seat93.Size = new System.Drawing.Size(27, 23);
+            this.seat93.Size = new System.Drawing.Size(36, 28);
             this.seat93.TabIndex = 310;
             this.seat93.Text = "93";
             this.seat93.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -348,9 +369,10 @@
             // 
             // seat97
             // 
-            this.seat97.Location = new System.Drawing.Point(329, 366);
+            this.seat97.Location = new System.Drawing.Point(439, 450);
+            this.seat97.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat97.Name = "seat97";
-            this.seat97.Size = new System.Drawing.Size(27, 23);
+            this.seat97.Size = new System.Drawing.Size(36, 28);
             this.seat97.TabIndex = 309;
             this.seat97.Text = "97";
             this.seat97.UseVisualStyleBackColor = true;
@@ -358,9 +380,10 @@
             // 
             // seat99
             // 
-            this.seat99.Location = new System.Drawing.Point(395, 366);
+            this.seat99.Location = new System.Drawing.Point(527, 450);
+            this.seat99.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat99.Name = "seat99";
-            this.seat99.Size = new System.Drawing.Size(27, 23);
+            this.seat99.Size = new System.Drawing.Size(36, 28);
             this.seat99.TabIndex = 307;
             this.seat99.Text = "99";
             this.seat99.UseVisualStyleBackColor = true;
@@ -368,9 +391,10 @@
             // 
             // seat98
             // 
-            this.seat98.Location = new System.Drawing.Point(362, 366);
+            this.seat98.Location = new System.Drawing.Point(483, 450);
+            this.seat98.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat98.Name = "seat98";
-            this.seat98.Size = new System.Drawing.Size(27, 23);
+            this.seat98.Size = new System.Drawing.Size(36, 28);
             this.seat98.TabIndex = 306;
             this.seat98.Text = "98";
             this.seat98.UseVisualStyleBackColor = true;
@@ -378,9 +402,10 @@
             // 
             // seat94
             // 
-            this.seat94.Location = new System.Drawing.Point(230, 367);
+            this.seat94.Location = new System.Drawing.Point(307, 452);
+            this.seat94.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat94.Name = "seat94";
-            this.seat94.Size = new System.Drawing.Size(27, 23);
+            this.seat94.Size = new System.Drawing.Size(36, 28);
             this.seat94.TabIndex = 305;
             this.seat94.Text = "94";
             this.seat94.UseVisualStyleBackColor = true;
@@ -388,9 +413,10 @@
             // 
             // seat71
             // 
-            this.seat71.Location = new System.Drawing.Point(263, 308);
+            this.seat71.Location = new System.Drawing.Point(351, 379);
+            this.seat71.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat71.Name = "seat71";
-            this.seat71.Size = new System.Drawing.Size(27, 23);
+            this.seat71.Size = new System.Drawing.Size(36, 28);
             this.seat71.TabIndex = 304;
             this.seat71.Text = "71";
             this.seat71.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -399,9 +425,10 @@
             // 
             // seat85
             // 
-            this.seat85.Location = new System.Drawing.Point(329, 337);
+            this.seat85.Location = new System.Drawing.Point(439, 415);
+            this.seat85.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat85.Name = "seat85";
-            this.seat85.Size = new System.Drawing.Size(27, 23);
+            this.seat85.Size = new System.Drawing.Size(36, 28);
             this.seat85.TabIndex = 303;
             this.seat85.Text = "85";
             this.seat85.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -410,9 +437,10 @@
             // 
             // seat91
             // 
-            this.seat91.Location = new System.Drawing.Point(527, 339);
+            this.seat91.Location = new System.Drawing.Point(703, 417);
+            this.seat91.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat91.Name = "seat91";
-            this.seat91.Size = new System.Drawing.Size(27, 23);
+            this.seat91.Size = new System.Drawing.Size(36, 28);
             this.seat91.TabIndex = 302;
             this.seat91.Text = "91";
             this.seat91.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -421,9 +449,10 @@
             // 
             // seat81
             // 
-            this.seat81.Location = new System.Drawing.Point(197, 338);
+            this.seat81.Location = new System.Drawing.Point(263, 416);
+            this.seat81.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat81.Name = "seat81";
-            this.seat81.Size = new System.Drawing.Size(27, 23);
+            this.seat81.Size = new System.Drawing.Size(36, 28);
             this.seat81.TabIndex = 301;
             this.seat81.Text = "81";
             this.seat81.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -432,9 +461,10 @@
             // 
             // seat84
             // 
-            this.seat84.Location = new System.Drawing.Point(296, 339);
+            this.seat84.Location = new System.Drawing.Point(395, 417);
+            this.seat84.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat84.Name = "seat84";
-            this.seat84.Size = new System.Drawing.Size(27, 23);
+            this.seat84.Size = new System.Drawing.Size(36, 28);
             this.seat84.TabIndex = 300;
             this.seat84.Text = "84";
             this.seat84.UseVisualStyleBackColor = true;
@@ -442,9 +472,10 @@
             // 
             // seat90
             // 
-            this.seat90.Location = new System.Drawing.Point(494, 338);
+            this.seat90.Location = new System.Drawing.Point(659, 416);
+            this.seat90.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat90.Name = "seat90";
-            this.seat90.Size = new System.Drawing.Size(27, 23);
+            this.seat90.Size = new System.Drawing.Size(36, 28);
             this.seat90.TabIndex = 299;
             this.seat90.Text = "90";
             this.seat90.UseVisualStyleBackColor = true;
@@ -452,9 +483,10 @@
             // 
             // seat82
             // 
-            this.seat82.Location = new System.Drawing.Point(230, 338);
+            this.seat82.Location = new System.Drawing.Point(307, 416);
+            this.seat82.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat82.Name = "seat82";
-            this.seat82.Size = new System.Drawing.Size(27, 23);
+            this.seat82.Size = new System.Drawing.Size(36, 28);
             this.seat82.TabIndex = 298;
             this.seat82.Text = "82";
             this.seat82.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -463,9 +495,10 @@
             // 
             // seat86
             // 
-            this.seat86.Location = new System.Drawing.Point(362, 338);
+            this.seat86.Location = new System.Drawing.Point(483, 416);
+            this.seat86.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat86.Name = "seat86";
-            this.seat86.Size = new System.Drawing.Size(27, 23);
+            this.seat86.Size = new System.Drawing.Size(36, 28);
             this.seat86.TabIndex = 297;
             this.seat86.Text = "86";
             this.seat86.UseVisualStyleBackColor = true;
@@ -473,9 +506,10 @@
             // 
             // seat89
             // 
-            this.seat89.Location = new System.Drawing.Point(461, 338);
+            this.seat89.Location = new System.Drawing.Point(615, 416);
+            this.seat89.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat89.Name = "seat89";
-            this.seat89.Size = new System.Drawing.Size(27, 23);
+            this.seat89.Size = new System.Drawing.Size(36, 28);
             this.seat89.TabIndex = 296;
             this.seat89.Text = "89";
             this.seat89.UseVisualStyleBackColor = true;
@@ -483,9 +517,10 @@
             // 
             // seat88
             // 
-            this.seat88.Location = new System.Drawing.Point(428, 338);
+            this.seat88.Location = new System.Drawing.Point(571, 416);
+            this.seat88.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat88.Name = "seat88";
-            this.seat88.Size = new System.Drawing.Size(27, 23);
+            this.seat88.Size = new System.Drawing.Size(36, 28);
             this.seat88.TabIndex = 295;
             this.seat88.Text = "88";
             this.seat88.UseVisualStyleBackColor = true;
@@ -493,9 +528,10 @@
             // 
             // seat87
             // 
-            this.seat87.Location = new System.Drawing.Point(395, 338);
+            this.seat87.Location = new System.Drawing.Point(527, 416);
+            this.seat87.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat87.Name = "seat87";
-            this.seat87.Size = new System.Drawing.Size(27, 23);
+            this.seat87.Size = new System.Drawing.Size(36, 28);
             this.seat87.TabIndex = 294;
             this.seat87.Text = "87";
             this.seat87.UseVisualStyleBackColor = true;
@@ -503,9 +539,10 @@
             // 
             // seat83
             // 
-            this.seat83.Location = new System.Drawing.Point(263, 338);
+            this.seat83.Location = new System.Drawing.Point(351, 416);
+            this.seat83.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat83.Name = "seat83";
-            this.seat83.Size = new System.Drawing.Size(27, 23);
+            this.seat83.Size = new System.Drawing.Size(36, 28);
             this.seat83.TabIndex = 293;
             this.seat83.Text = "83";
             this.seat83.UseVisualStyleBackColor = true;
@@ -513,9 +550,10 @@
             // 
             // seat74
             // 
-            this.seat74.Location = new System.Drawing.Point(362, 308);
+            this.seat74.Location = new System.Drawing.Point(483, 379);
+            this.seat74.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat74.Name = "seat74";
-            this.seat74.Size = new System.Drawing.Size(27, 23);
+            this.seat74.Size = new System.Drawing.Size(36, 28);
             this.seat74.TabIndex = 292;
             this.seat74.Text = "74";
             this.seat74.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -524,9 +562,10 @@
             // 
             // seat80
             // 
-            this.seat80.Location = new System.Drawing.Point(560, 312);
+            this.seat80.Location = new System.Drawing.Point(747, 384);
+            this.seat80.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat80.Name = "seat80";
-            this.seat80.Size = new System.Drawing.Size(27, 23);
+            this.seat80.Size = new System.Drawing.Size(36, 28);
             this.seat80.TabIndex = 291;
             this.seat80.Text = "80";
             this.seat80.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -535,9 +574,10 @@
             // 
             // seat70
             // 
-            this.seat70.Location = new System.Drawing.Point(230, 309);
+            this.seat70.Location = new System.Drawing.Point(307, 380);
+            this.seat70.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat70.Name = "seat70";
-            this.seat70.Size = new System.Drawing.Size(27, 23);
+            this.seat70.Size = new System.Drawing.Size(36, 28);
             this.seat70.TabIndex = 290;
             this.seat70.Text = "70";
             this.seat70.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -546,9 +586,10 @@
             // 
             // seat73
             // 
-            this.seat73.Location = new System.Drawing.Point(329, 310);
+            this.seat73.Location = new System.Drawing.Point(439, 382);
+            this.seat73.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat73.Name = "seat73";
-            this.seat73.Size = new System.Drawing.Size(27, 23);
+            this.seat73.Size = new System.Drawing.Size(36, 28);
             this.seat73.TabIndex = 289;
             this.seat73.Text = "73";
             this.seat73.UseVisualStyleBackColor = true;
@@ -556,9 +597,10 @@
             // 
             // seat79
             // 
-            this.seat79.Location = new System.Drawing.Point(527, 311);
+            this.seat79.Location = new System.Drawing.Point(703, 383);
+            this.seat79.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat79.Name = "seat79";
-            this.seat79.Size = new System.Drawing.Size(27, 23);
+            this.seat79.Size = new System.Drawing.Size(36, 28);
             this.seat79.TabIndex = 288;
             this.seat79.Text = "79";
             this.seat79.UseVisualStyleBackColor = true;
@@ -566,9 +608,10 @@
             // 
             // seat75
             // 
-            this.seat75.Location = new System.Drawing.Point(395, 309);
+            this.seat75.Location = new System.Drawing.Point(527, 380);
+            this.seat75.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat75.Name = "seat75";
-            this.seat75.Size = new System.Drawing.Size(27, 23);
+            this.seat75.Size = new System.Drawing.Size(36, 28);
             this.seat75.TabIndex = 287;
             this.seat75.Text = "75";
             this.seat75.UseVisualStyleBackColor = true;
@@ -576,9 +619,10 @@
             // 
             // seat78
             // 
-            this.seat78.Location = new System.Drawing.Point(494, 311);
+            this.seat78.Location = new System.Drawing.Point(659, 383);
+            this.seat78.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat78.Name = "seat78";
-            this.seat78.Size = new System.Drawing.Size(27, 23);
+            this.seat78.Size = new System.Drawing.Size(36, 28);
             this.seat78.TabIndex = 286;
             this.seat78.Text = "78";
             this.seat78.UseVisualStyleBackColor = true;
@@ -586,9 +630,10 @@
             // 
             // seat77
             // 
-            this.seat77.Location = new System.Drawing.Point(461, 311);
+            this.seat77.Location = new System.Drawing.Point(615, 383);
+            this.seat77.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat77.Name = "seat77";
-            this.seat77.Size = new System.Drawing.Size(27, 23);
+            this.seat77.Size = new System.Drawing.Size(36, 28);
             this.seat77.TabIndex = 285;
             this.seat77.Text = "77";
             this.seat77.UseVisualStyleBackColor = true;
@@ -596,9 +641,10 @@
             // 
             // seat76
             // 
-            this.seat76.Location = new System.Drawing.Point(428, 311);
+            this.seat76.Location = new System.Drawing.Point(571, 383);
+            this.seat76.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat76.Name = "seat76";
-            this.seat76.Size = new System.Drawing.Size(27, 23);
+            this.seat76.Size = new System.Drawing.Size(36, 28);
             this.seat76.TabIndex = 284;
             this.seat76.Text = "76";
             this.seat76.UseVisualStyleBackColor = true;
@@ -606,9 +652,10 @@
             // 
             // seat72
             // 
-            this.seat72.Location = new System.Drawing.Point(296, 309);
+            this.seat72.Location = new System.Drawing.Point(395, 380);
+            this.seat72.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat72.Name = "seat72";
-            this.seat72.Size = new System.Drawing.Size(27, 23);
+            this.seat72.Size = new System.Drawing.Size(36, 28);
             this.seat72.TabIndex = 283;
             this.seat72.Text = "72";
             this.seat72.UseVisualStyleBackColor = true;
@@ -616,9 +663,10 @@
             // 
             // seat63
             // 
-            this.seat63.Location = new System.Drawing.Point(395, 281);
+            this.seat63.Location = new System.Drawing.Point(527, 346);
+            this.seat63.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat63.Name = "seat63";
-            this.seat63.Size = new System.Drawing.Size(27, 23);
+            this.seat63.Size = new System.Drawing.Size(36, 28);
             this.seat63.TabIndex = 282;
             this.seat63.Text = "63";
             this.seat63.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -627,9 +675,10 @@
             // 
             // seat69
             // 
-            this.seat69.Location = new System.Drawing.Point(197, 309);
+            this.seat69.Location = new System.Drawing.Point(263, 380);
+            this.seat69.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat69.Name = "seat69";
-            this.seat69.Size = new System.Drawing.Size(27, 23);
+            this.seat69.Size = new System.Drawing.Size(36, 28);
             this.seat69.TabIndex = 281;
             this.seat69.Text = "69";
             this.seat69.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -638,9 +687,10 @@
             // 
             // seat59
             // 
-            this.seat59.Location = new System.Drawing.Point(263, 280);
+            this.seat59.Location = new System.Drawing.Point(351, 345);
+            this.seat59.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat59.Name = "seat59";
-            this.seat59.Size = new System.Drawing.Size(27, 23);
+            this.seat59.Size = new System.Drawing.Size(36, 28);
             this.seat59.TabIndex = 280;
             this.seat59.Text = "59";
             this.seat59.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -649,9 +699,10 @@
             // 
             // seat62
             // 
-            this.seat62.Location = new System.Drawing.Point(362, 281);
+            this.seat62.Location = new System.Drawing.Point(483, 346);
+            this.seat62.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat62.Name = "seat62";
-            this.seat62.Size = new System.Drawing.Size(27, 23);
+            this.seat62.Size = new System.Drawing.Size(36, 28);
             this.seat62.TabIndex = 279;
             this.seat62.Text = "62";
             this.seat62.UseVisualStyleBackColor = true;
@@ -659,9 +710,10 @@
             // 
             // seat68
             // 
-            this.seat68.Location = new System.Drawing.Point(560, 282);
+            this.seat68.Location = new System.Drawing.Point(747, 347);
+            this.seat68.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat68.Name = "seat68";
-            this.seat68.Size = new System.Drawing.Size(27, 23);
+            this.seat68.Size = new System.Drawing.Size(36, 28);
             this.seat68.TabIndex = 278;
             this.seat68.Text = "68";
             this.seat68.UseVisualStyleBackColor = true;
@@ -669,9 +721,10 @@
             // 
             // seat60
             // 
-            this.seat60.Location = new System.Drawing.Point(296, 280);
+            this.seat60.Location = new System.Drawing.Point(395, 345);
+            this.seat60.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat60.Name = "seat60";
-            this.seat60.Size = new System.Drawing.Size(27, 23);
+            this.seat60.Size = new System.Drawing.Size(36, 28);
             this.seat60.TabIndex = 277;
             this.seat60.Text = "60";
             this.seat60.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -680,9 +733,10 @@
             // 
             // seat64
             // 
-            this.seat64.Location = new System.Drawing.Point(428, 282);
+            this.seat64.Location = new System.Drawing.Point(571, 347);
+            this.seat64.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat64.Name = "seat64";
-            this.seat64.Size = new System.Drawing.Size(27, 23);
+            this.seat64.Size = new System.Drawing.Size(36, 28);
             this.seat64.TabIndex = 276;
             this.seat64.Text = "64";
             this.seat64.UseVisualStyleBackColor = true;
@@ -690,9 +744,10 @@
             // 
             // seat67
             // 
-            this.seat67.Location = new System.Drawing.Point(527, 282);
+            this.seat67.Location = new System.Drawing.Point(703, 347);
+            this.seat67.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat67.Name = "seat67";
-            this.seat67.Size = new System.Drawing.Size(27, 23);
+            this.seat67.Size = new System.Drawing.Size(36, 28);
             this.seat67.TabIndex = 275;
             this.seat67.Text = "67";
             this.seat67.UseVisualStyleBackColor = true;
@@ -700,9 +755,10 @@
             // 
             // seat66
             // 
-            this.seat66.Location = new System.Drawing.Point(494, 282);
+            this.seat66.Location = new System.Drawing.Point(659, 347);
+            this.seat66.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat66.Name = "seat66";
-            this.seat66.Size = new System.Drawing.Size(27, 23);
+            this.seat66.Size = new System.Drawing.Size(36, 28);
             this.seat66.TabIndex = 274;
             this.seat66.Text = "66";
             this.seat66.UseVisualStyleBackColor = true;
@@ -710,9 +766,10 @@
             // 
             // seat65
             // 
-            this.seat65.Location = new System.Drawing.Point(461, 282);
+            this.seat65.Location = new System.Drawing.Point(615, 347);
+            this.seat65.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat65.Name = "seat65";
-            this.seat65.Size = new System.Drawing.Size(27, 23);
+            this.seat65.Size = new System.Drawing.Size(36, 28);
             this.seat65.TabIndex = 273;
             this.seat65.Text = "65";
             this.seat65.UseVisualStyleBackColor = true;
@@ -721,9 +778,10 @@
             // seat61
             // 
             this.seat61.BackColor = System.Drawing.Color.Gainsboro;
-            this.seat61.Location = new System.Drawing.Point(329, 280);
+            this.seat61.Location = new System.Drawing.Point(439, 345);
+            this.seat61.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat61.Name = "seat61";
-            this.seat61.Size = new System.Drawing.Size(27, 23);
+            this.seat61.Size = new System.Drawing.Size(36, 28);
             this.seat61.TabIndex = 272;
             this.seat61.Text = "61";
             this.seat61.UseVisualStyleBackColor = false;
@@ -731,9 +789,10 @@
             // 
             // seat52
             // 
-            this.seat52.Location = new System.Drawing.Point(428, 250);
+            this.seat52.Location = new System.Drawing.Point(571, 308);
+            this.seat52.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat52.Name = "seat52";
-            this.seat52.Size = new System.Drawing.Size(27, 23);
+            this.seat52.Size = new System.Drawing.Size(36, 28);
             this.seat52.TabIndex = 271;
             this.seat52.Text = "52";
             this.seat52.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -742,9 +801,10 @@
             // 
             // seat58
             // 
-            this.seat58.Location = new System.Drawing.Point(230, 279);
+            this.seat58.Location = new System.Drawing.Point(307, 343);
+            this.seat58.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat58.Name = "seat58";
-            this.seat58.Size = new System.Drawing.Size(27, 23);
+            this.seat58.Size = new System.Drawing.Size(36, 28);
             this.seat58.TabIndex = 270;
             this.seat58.Text = "58";
             this.seat58.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -753,9 +813,10 @@
             // 
             // seat48
             // 
-            this.seat48.Location = new System.Drawing.Point(296, 251);
+            this.seat48.Location = new System.Drawing.Point(395, 309);
+            this.seat48.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat48.Name = "seat48";
-            this.seat48.Size = new System.Drawing.Size(27, 23);
+            this.seat48.Size = new System.Drawing.Size(36, 28);
             this.seat48.TabIndex = 269;
             this.seat48.Text = "48";
             this.seat48.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -764,9 +825,10 @@
             // 
             // seat51
             // 
-            this.seat51.Location = new System.Drawing.Point(395, 252);
+            this.seat51.Location = new System.Drawing.Point(527, 310);
+            this.seat51.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat51.Name = "seat51";
-            this.seat51.Size = new System.Drawing.Size(27, 23);
+            this.seat51.Size = new System.Drawing.Size(36, 28);
             this.seat51.TabIndex = 268;
             this.seat51.Text = "51";
             this.seat51.UseVisualStyleBackColor = true;
@@ -774,9 +836,10 @@
             // 
             // seat57
             // 
-            this.seat57.Location = new System.Drawing.Point(197, 280);
+            this.seat57.Location = new System.Drawing.Point(263, 345);
+            this.seat57.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat57.Name = "seat57";
-            this.seat57.Size = new System.Drawing.Size(27, 23);
+            this.seat57.Size = new System.Drawing.Size(36, 28);
             this.seat57.TabIndex = 267;
             this.seat57.Text = "57";
             this.seat57.UseVisualStyleBackColor = true;
@@ -784,9 +847,10 @@
             // 
             // seat49
             // 
-            this.seat49.Location = new System.Drawing.Point(329, 251);
+            this.seat49.Location = new System.Drawing.Point(439, 309);
+            this.seat49.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat49.Name = "seat49";
-            this.seat49.Size = new System.Drawing.Size(27, 23);
+            this.seat49.Size = new System.Drawing.Size(36, 28);
             this.seat49.TabIndex = 266;
             this.seat49.Text = "49";
             this.seat49.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -795,9 +859,10 @@
             // 
             // seat53
             // 
-            this.seat53.Location = new System.Drawing.Point(461, 251);
+            this.seat53.Location = new System.Drawing.Point(615, 309);
+            this.seat53.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat53.Name = "seat53";
-            this.seat53.Size = new System.Drawing.Size(27, 23);
+            this.seat53.Size = new System.Drawing.Size(36, 28);
             this.seat53.TabIndex = 265;
             this.seat53.Text = "53";
             this.seat53.UseVisualStyleBackColor = true;
@@ -805,9 +870,10 @@
             // 
             // seat56
             // 
-            this.seat56.Location = new System.Drawing.Point(560, 251);
+            this.seat56.Location = new System.Drawing.Point(747, 309);
+            this.seat56.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat56.Name = "seat56";
-            this.seat56.Size = new System.Drawing.Size(27, 23);
+            this.seat56.Size = new System.Drawing.Size(36, 28);
             this.seat56.TabIndex = 264;
             this.seat56.Text = "56";
             this.seat56.UseVisualStyleBackColor = true;
@@ -815,9 +881,10 @@
             // 
             // seat55
             // 
-            this.seat55.Location = new System.Drawing.Point(527, 251);
+            this.seat55.Location = new System.Drawing.Point(703, 309);
+            this.seat55.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat55.Name = "seat55";
-            this.seat55.Size = new System.Drawing.Size(27, 23);
+            this.seat55.Size = new System.Drawing.Size(36, 28);
             this.seat55.TabIndex = 263;
             this.seat55.Text = "55";
             this.seat55.UseVisualStyleBackColor = true;
@@ -825,9 +892,10 @@
             // 
             // seat54
             // 
-            this.seat54.Location = new System.Drawing.Point(494, 251);
+            this.seat54.Location = new System.Drawing.Point(659, 309);
+            this.seat54.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat54.Name = "seat54";
-            this.seat54.Size = new System.Drawing.Size(27, 23);
+            this.seat54.Size = new System.Drawing.Size(36, 28);
             this.seat54.TabIndex = 262;
             this.seat54.Text = "54";
             this.seat54.UseVisualStyleBackColor = true;
@@ -835,9 +903,10 @@
             // 
             // seat50
             // 
-            this.seat50.Location = new System.Drawing.Point(362, 251);
+            this.seat50.Location = new System.Drawing.Point(483, 309);
+            this.seat50.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat50.Name = "seat50";
-            this.seat50.Size = new System.Drawing.Size(27, 23);
+            this.seat50.Size = new System.Drawing.Size(36, 28);
             this.seat50.TabIndex = 261;
             this.seat50.Text = "50";
             this.seat50.UseVisualStyleBackColor = true;
@@ -845,9 +914,10 @@
             // 
             // seat41
             // 
-            this.seat41.Location = new System.Drawing.Point(461, 221);
+            this.seat41.Location = new System.Drawing.Point(615, 272);
+            this.seat41.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat41.Name = "seat41";
-            this.seat41.Size = new System.Drawing.Size(27, 23);
+            this.seat41.Size = new System.Drawing.Size(36, 28);
             this.seat41.TabIndex = 260;
             this.seat41.Text = "41";
             this.seat41.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -856,9 +926,10 @@
             // 
             // seat47
             // 
-            this.seat47.Location = new System.Drawing.Point(263, 252);
+            this.seat47.Location = new System.Drawing.Point(351, 310);
+            this.seat47.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat47.Name = "seat47";
-            this.seat47.Size = new System.Drawing.Size(27, 23);
+            this.seat47.Size = new System.Drawing.Size(36, 28);
             this.seat47.TabIndex = 259;
             this.seat47.Text = "47";
             this.seat47.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -867,9 +938,10 @@
             // 
             // seat37
             // 
-            this.seat37.Location = new System.Drawing.Point(329, 222);
+            this.seat37.Location = new System.Drawing.Point(439, 273);
+            this.seat37.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat37.Name = "seat37";
-            this.seat37.Size = new System.Drawing.Size(27, 23);
+            this.seat37.Size = new System.Drawing.Size(36, 28);
             this.seat37.TabIndex = 258;
             this.seat37.Text = "37";
             this.seat37.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -878,9 +950,10 @@
             // 
             // seat40
             // 
-            this.seat40.Location = new System.Drawing.Point(428, 222);
+            this.seat40.Location = new System.Drawing.Point(571, 273);
+            this.seat40.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat40.Name = "seat40";
-            this.seat40.Size = new System.Drawing.Size(27, 23);
+            this.seat40.Size = new System.Drawing.Size(36, 28);
             this.seat40.TabIndex = 257;
             this.seat40.Text = "40";
             this.seat40.UseVisualStyleBackColor = true;
@@ -888,9 +961,10 @@
             // 
             // seat46
             // 
-            this.seat46.Location = new System.Drawing.Point(230, 251);
+            this.seat46.Location = new System.Drawing.Point(307, 309);
+            this.seat46.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat46.Name = "seat46";
-            this.seat46.Size = new System.Drawing.Size(27, 23);
+            this.seat46.Size = new System.Drawing.Size(36, 28);
             this.seat46.TabIndex = 256;
             this.seat46.Text = "46";
             this.seat46.UseVisualStyleBackColor = true;
@@ -898,9 +972,10 @@
             // 
             // seat38
             // 
-            this.seat38.Location = new System.Drawing.Point(362, 222);
+            this.seat38.Location = new System.Drawing.Point(483, 273);
+            this.seat38.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat38.Name = "seat38";
-            this.seat38.Size = new System.Drawing.Size(27, 23);
+            this.seat38.Size = new System.Drawing.Size(36, 28);
             this.seat38.TabIndex = 255;
             this.seat38.Text = "38";
             this.seat38.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -909,9 +984,10 @@
             // 
             // seat42
             // 
-            this.seat42.Location = new System.Drawing.Point(494, 222);
+            this.seat42.Location = new System.Drawing.Point(659, 273);
+            this.seat42.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat42.Name = "seat42";
-            this.seat42.Size = new System.Drawing.Size(27, 23);
+            this.seat42.Size = new System.Drawing.Size(36, 28);
             this.seat42.TabIndex = 254;
             this.seat42.Text = "42";
             this.seat42.UseVisualStyleBackColor = true;
@@ -919,9 +995,10 @@
             // 
             // seat45
             // 
-            this.seat45.Location = new System.Drawing.Point(197, 251);
+            this.seat45.Location = new System.Drawing.Point(263, 309);
+            this.seat45.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat45.Name = "seat45";
-            this.seat45.Size = new System.Drawing.Size(27, 23);
+            this.seat45.Size = new System.Drawing.Size(36, 28);
             this.seat45.TabIndex = 253;
             this.seat45.Text = "45";
             this.seat45.UseVisualStyleBackColor = true;
@@ -929,9 +1006,10 @@
             // 
             // seat44
             // 
-            this.seat44.Location = new System.Drawing.Point(560, 222);
+            this.seat44.Location = new System.Drawing.Point(747, 273);
+            this.seat44.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat44.Name = "seat44";
-            this.seat44.Size = new System.Drawing.Size(27, 23);
+            this.seat44.Size = new System.Drawing.Size(36, 28);
             this.seat44.TabIndex = 252;
             this.seat44.Text = "44";
             this.seat44.UseVisualStyleBackColor = true;
@@ -939,9 +1017,10 @@
             // 
             // seat43
             // 
-            this.seat43.Location = new System.Drawing.Point(527, 222);
+            this.seat43.Location = new System.Drawing.Point(703, 273);
+            this.seat43.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat43.Name = "seat43";
-            this.seat43.Size = new System.Drawing.Size(27, 23);
+            this.seat43.Size = new System.Drawing.Size(36, 28);
             this.seat43.TabIndex = 251;
             this.seat43.Text = "43";
             this.seat43.UseVisualStyleBackColor = true;
@@ -949,9 +1028,10 @@
             // 
             // seat39
             // 
-            this.seat39.Location = new System.Drawing.Point(395, 222);
+            this.seat39.Location = new System.Drawing.Point(527, 273);
+            this.seat39.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat39.Name = "seat39";
-            this.seat39.Size = new System.Drawing.Size(27, 23);
+            this.seat39.Size = new System.Drawing.Size(36, 28);
             this.seat39.TabIndex = 250;
             this.seat39.Text = "39";
             this.seat39.UseVisualStyleBackColor = true;
@@ -959,9 +1039,10 @@
             // 
             // seat30
             // 
-            this.seat30.Location = new System.Drawing.Point(461, 194);
+            this.seat30.Location = new System.Drawing.Point(615, 239);
+            this.seat30.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat30.Name = "seat30";
-            this.seat30.Size = new System.Drawing.Size(27, 23);
+            this.seat30.Size = new System.Drawing.Size(36, 28);
             this.seat30.TabIndex = 249;
             this.seat30.Text = "30";
             this.seat30.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -970,9 +1051,10 @@
             // 
             // seat36
             // 
-            this.seat36.Location = new System.Drawing.Point(296, 224);
+            this.seat36.Location = new System.Drawing.Point(395, 276);
+            this.seat36.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat36.Name = "seat36";
-            this.seat36.Size = new System.Drawing.Size(27, 23);
+            this.seat36.Size = new System.Drawing.Size(36, 28);
             this.seat36.TabIndex = 248;
             this.seat36.Text = "36";
             this.seat36.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -981,9 +1063,10 @@
             // 
             // seat26
             // 
-            this.seat26.Location = new System.Drawing.Point(329, 195);
+            this.seat26.Location = new System.Drawing.Point(439, 240);
+            this.seat26.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat26.Name = "seat26";
-            this.seat26.Size = new System.Drawing.Size(27, 23);
+            this.seat26.Size = new System.Drawing.Size(36, 28);
             this.seat26.TabIndex = 247;
             this.seat26.Text = "26";
             this.seat26.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -992,9 +1075,10 @@
             // 
             // seat29
             // 
-            this.seat29.Location = new System.Drawing.Point(428, 196);
+            this.seat29.Location = new System.Drawing.Point(571, 241);
+            this.seat29.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat29.Name = "seat29";
-            this.seat29.Size = new System.Drawing.Size(27, 23);
+            this.seat29.Size = new System.Drawing.Size(36, 28);
             this.seat29.TabIndex = 246;
             this.seat29.Text = "29";
             this.seat29.UseVisualStyleBackColor = true;
@@ -1002,9 +1086,10 @@
             // 
             // seat35
             // 
-            this.seat35.Location = new System.Drawing.Point(263, 223);
+            this.seat35.Location = new System.Drawing.Point(351, 274);
+            this.seat35.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat35.Name = "seat35";
-            this.seat35.Size = new System.Drawing.Size(27, 23);
+            this.seat35.Size = new System.Drawing.Size(36, 28);
             this.seat35.TabIndex = 245;
             this.seat35.Text = "35";
             this.seat35.UseVisualStyleBackColor = true;
@@ -1012,9 +1097,10 @@
             // 
             // seat27
             // 
-            this.seat27.Location = new System.Drawing.Point(362, 195);
+            this.seat27.Location = new System.Drawing.Point(483, 240);
+            this.seat27.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat27.Name = "seat27";
-            this.seat27.Size = new System.Drawing.Size(27, 23);
+            this.seat27.Size = new System.Drawing.Size(36, 28);
             this.seat27.TabIndex = 244;
             this.seat27.Text = "27";
             this.seat27.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1023,9 +1109,10 @@
             // 
             // seat31
             // 
-            this.seat31.Location = new System.Drawing.Point(494, 195);
+            this.seat31.Location = new System.Drawing.Point(659, 240);
+            this.seat31.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat31.Name = "seat31";
-            this.seat31.Size = new System.Drawing.Size(27, 23);
+            this.seat31.Size = new System.Drawing.Size(36, 28);
             this.seat31.TabIndex = 243;
             this.seat31.Text = "31";
             this.seat31.UseVisualStyleBackColor = true;
@@ -1033,9 +1120,10 @@
             // 
             // seat34
             // 
-            this.seat34.Location = new System.Drawing.Point(230, 223);
+            this.seat34.Location = new System.Drawing.Point(307, 274);
+            this.seat34.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat34.Name = "seat34";
-            this.seat34.Size = new System.Drawing.Size(27, 23);
+            this.seat34.Size = new System.Drawing.Size(36, 28);
             this.seat34.TabIndex = 242;
             this.seat34.Text = "34";
             this.seat34.UseVisualStyleBackColor = true;
@@ -1043,9 +1131,10 @@
             // 
             // seat33
             // 
-            this.seat33.Location = new System.Drawing.Point(197, 223);
+            this.seat33.Location = new System.Drawing.Point(263, 274);
+            this.seat33.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat33.Name = "seat33";
-            this.seat33.Size = new System.Drawing.Size(27, 23);
+            this.seat33.Size = new System.Drawing.Size(36, 28);
             this.seat33.TabIndex = 241;
             this.seat33.Text = "33";
             this.seat33.UseVisualStyleBackColor = true;
@@ -1053,9 +1142,10 @@
             // 
             // seat32
             // 
-            this.seat32.Location = new System.Drawing.Point(527, 194);
+            this.seat32.Location = new System.Drawing.Point(703, 239);
+            this.seat32.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat32.Name = "seat32";
-            this.seat32.Size = new System.Drawing.Size(27, 23);
+            this.seat32.Size = new System.Drawing.Size(36, 28);
             this.seat32.TabIndex = 240;
             this.seat32.Text = "32";
             this.seat32.UseVisualStyleBackColor = true;
@@ -1063,9 +1153,10 @@
             // 
             // seat28
             // 
-            this.seat28.Location = new System.Drawing.Point(395, 195);
+            this.seat28.Location = new System.Drawing.Point(527, 240);
+            this.seat28.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat28.Name = "seat28";
-            this.seat28.Size = new System.Drawing.Size(27, 23);
+            this.seat28.Size = new System.Drawing.Size(36, 28);
             this.seat28.TabIndex = 239;
             this.seat28.Text = "28";
             this.seat28.UseVisualStyleBackColor = true;
@@ -1073,9 +1164,10 @@
             // 
             // seat19
             // 
-            this.seat19.Location = new System.Drawing.Point(395, 167);
+            this.seat19.Location = new System.Drawing.Point(527, 206);
+            this.seat19.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat19.Name = "seat19";
-            this.seat19.Size = new System.Drawing.Size(27, 23);
+            this.seat19.Size = new System.Drawing.Size(36, 28);
             this.seat19.TabIndex = 238;
             this.seat19.Text = "19";
             this.seat19.UseVisualStyleBackColor = true;
@@ -1083,9 +1175,10 @@
             // 
             // seat14
             // 
-            this.seat14.Location = new System.Drawing.Point(494, 137);
+            this.seat14.Location = new System.Drawing.Point(659, 169);
+            this.seat14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat14.Name = "seat14";
-            this.seat14.Size = new System.Drawing.Size(27, 23);
+            this.seat14.Size = new System.Drawing.Size(36, 28);
             this.seat14.TabIndex = 237;
             this.seat14.Text = "14";
             this.seat14.UseVisualStyleBackColor = true;
@@ -1093,9 +1186,10 @@
             // 
             // seat25
             // 
-            this.seat25.Location = new System.Drawing.Point(296, 195);
+            this.seat25.Location = new System.Drawing.Point(395, 240);
+            this.seat25.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat25.Name = "seat25";
-            this.seat25.Size = new System.Drawing.Size(27, 23);
+            this.seat25.Size = new System.Drawing.Size(36, 28);
             this.seat25.TabIndex = 236;
             this.seat25.Text = "25";
             this.seat25.UseVisualStyleBackColor = true;
@@ -1103,9 +1197,10 @@
             // 
             // seat17
             // 
-            this.seat17.Location = new System.Drawing.Point(329, 166);
+            this.seat17.Location = new System.Drawing.Point(439, 204);
+            this.seat17.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat17.Name = "seat17";
-            this.seat17.Size = new System.Drawing.Size(27, 23);
+            this.seat17.Size = new System.Drawing.Size(36, 28);
             this.seat17.TabIndex = 235;
             this.seat17.Text = "17";
             this.seat17.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1114,9 +1209,10 @@
             // 
             // seat21
             // 
-            this.seat21.Location = new System.Drawing.Point(461, 166);
+            this.seat21.Location = new System.Drawing.Point(615, 204);
+            this.seat21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat21.Name = "seat21";
-            this.seat21.Size = new System.Drawing.Size(27, 23);
+            this.seat21.Size = new System.Drawing.Size(36, 28);
             this.seat21.TabIndex = 234;
             this.seat21.Text = "21";
             this.seat21.UseVisualStyleBackColor = true;
@@ -1124,9 +1220,10 @@
             // 
             // seat24
             // 
-            this.seat24.Location = new System.Drawing.Point(263, 195);
+            this.seat24.Location = new System.Drawing.Point(351, 240);
+            this.seat24.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat24.Name = "seat24";
-            this.seat24.Size = new System.Drawing.Size(27, 23);
+            this.seat24.Size = new System.Drawing.Size(36, 28);
             this.seat24.TabIndex = 233;
             this.seat24.Text = "24";
             this.seat24.UseVisualStyleBackColor = true;
@@ -1134,9 +1231,10 @@
             // 
             // seat23
             // 
-            this.seat23.Location = new System.Drawing.Point(230, 195);
+            this.seat23.Location = new System.Drawing.Point(307, 240);
+            this.seat23.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat23.Name = "seat23";
-            this.seat23.Size = new System.Drawing.Size(27, 23);
+            this.seat23.Size = new System.Drawing.Size(36, 28);
             this.seat23.TabIndex = 232;
             this.seat23.Text = "23";
             this.seat23.UseVisualStyleBackColor = true;
@@ -1144,9 +1242,10 @@
             // 
             // seat22
             // 
-            this.seat22.Location = new System.Drawing.Point(494, 166);
+            this.seat22.Location = new System.Drawing.Point(659, 204);
+            this.seat22.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat22.Name = "seat22";
-            this.seat22.Size = new System.Drawing.Size(27, 23);
+            this.seat22.Size = new System.Drawing.Size(36, 28);
             this.seat22.TabIndex = 231;
             this.seat22.Text = "22";
             this.seat22.UseVisualStyleBackColor = true;
@@ -1154,9 +1253,10 @@
             // 
             // seat20
             // 
-            this.seat20.Location = new System.Drawing.Point(428, 166);
+            this.seat20.Location = new System.Drawing.Point(571, 204);
+            this.seat20.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat20.Name = "seat20";
-            this.seat20.Size = new System.Drawing.Size(27, 23);
+            this.seat20.Size = new System.Drawing.Size(36, 28);
             this.seat20.TabIndex = 230;
             this.seat20.Text = "20";
             this.seat20.UseVisualStyleBackColor = true;
@@ -1165,9 +1265,10 @@
             // seat18
             // 
             this.seat18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.seat18.Location = new System.Drawing.Point(362, 166);
+            this.seat18.Location = new System.Drawing.Point(483, 204);
+            this.seat18.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat18.Name = "seat18";
-            this.seat18.Size = new System.Drawing.Size(27, 23);
+            this.seat18.Size = new System.Drawing.Size(36, 28);
             this.seat18.TabIndex = 229;
             this.seat18.Text = "18";
             this.seat18.UseVisualStyleBackColor = false;
@@ -1175,9 +1276,10 @@
             // 
             // seat16
             // 
-            this.seat16.Location = new System.Drawing.Point(296, 166);
+            this.seat16.Location = new System.Drawing.Point(395, 204);
+            this.seat16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat16.Name = "seat16";
-            this.seat16.Size = new System.Drawing.Size(27, 23);
+            this.seat16.Size = new System.Drawing.Size(36, 28);
             this.seat16.TabIndex = 228;
             this.seat16.Text = "16";
             this.seat16.UseVisualStyleBackColor = true;
@@ -1185,9 +1287,10 @@
             // 
             // seat8
             // 
-            this.seat8.Location = new System.Drawing.Point(296, 137);
+            this.seat8.Location = new System.Drawing.Point(395, 169);
+            this.seat8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat8.Name = "seat8";
-            this.seat8.Size = new System.Drawing.Size(27, 23);
+            this.seat8.Size = new System.Drawing.Size(36, 28);
             this.seat8.TabIndex = 227;
             this.seat8.Text = "8";
             this.seat8.UseVisualStyleBackColor = true;
@@ -1195,9 +1298,10 @@
             // 
             // seat12
             // 
-            this.seat12.Location = new System.Drawing.Point(428, 137);
+            this.seat12.Location = new System.Drawing.Point(571, 169);
+            this.seat12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat12.Name = "seat12";
-            this.seat12.Size = new System.Drawing.Size(27, 23);
+            this.seat12.Size = new System.Drawing.Size(36, 28);
             this.seat12.TabIndex = 226;
             this.seat12.Text = "12";
             this.seat12.UseVisualStyleBackColor = true;
@@ -1205,9 +1309,10 @@
             // 
             // seat10
             // 
-            this.seat10.Location = new System.Drawing.Point(362, 137);
+            this.seat10.Location = new System.Drawing.Point(483, 169);
+            this.seat10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat10.Name = "seat10";
-            this.seat10.Size = new System.Drawing.Size(27, 23);
+            this.seat10.Size = new System.Drawing.Size(36, 28);
             this.seat10.TabIndex = 225;
             this.seat10.Text = "10";
             this.seat10.UseVisualStyleBackColor = true;
@@ -1215,9 +1320,10 @@
             // 
             // seat15
             // 
-            this.seat15.Location = new System.Drawing.Point(263, 166);
+            this.seat15.Location = new System.Drawing.Point(351, 204);
+            this.seat15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat15.Name = "seat15";
-            this.seat15.Size = new System.Drawing.Size(27, 23);
+            this.seat15.Size = new System.Drawing.Size(36, 28);
             this.seat15.TabIndex = 224;
             this.seat15.Text = "15";
             this.seat15.UseVisualStyleBackColor = true;
@@ -1225,9 +1331,10 @@
             // 
             // seat13
             // 
-            this.seat13.Location = new System.Drawing.Point(461, 137);
+            this.seat13.Location = new System.Drawing.Point(615, 169);
+            this.seat13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat13.Name = "seat13";
-            this.seat13.Size = new System.Drawing.Size(27, 23);
+            this.seat13.Size = new System.Drawing.Size(36, 28);
             this.seat13.TabIndex = 223;
             this.seat13.Text = "13";
             this.seat13.UseVisualStyleBackColor = true;
@@ -1235,9 +1342,10 @@
             // 
             // seat11
             // 
-            this.seat11.Location = new System.Drawing.Point(395, 137);
+            this.seat11.Location = new System.Drawing.Point(527, 169);
+            this.seat11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat11.Name = "seat11";
-            this.seat11.Size = new System.Drawing.Size(27, 23);
+            this.seat11.Size = new System.Drawing.Size(36, 28);
             this.seat11.TabIndex = 222;
             this.seat11.Text = "11";
             this.seat11.UseVisualStyleBackColor = true;
@@ -1245,9 +1353,10 @@
             // 
             // seat9
             // 
-            this.seat9.Location = new System.Drawing.Point(329, 137);
+            this.seat9.Location = new System.Drawing.Point(439, 169);
+            this.seat9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat9.Name = "seat9";
-            this.seat9.Size = new System.Drawing.Size(27, 23);
+            this.seat9.Size = new System.Drawing.Size(36, 28);
             this.seat9.TabIndex = 221;
             this.seat9.Text = "9";
             this.seat9.UseVisualStyleBackColor = true;
@@ -1255,9 +1364,10 @@
             // 
             // seat4
             // 
-            this.seat4.Location = new System.Drawing.Point(395, 107);
+            this.seat4.Location = new System.Drawing.Point(527, 132);
+            this.seat4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat4.Name = "seat4";
-            this.seat4.Size = new System.Drawing.Size(27, 23);
+            this.seat4.Size = new System.Drawing.Size(36, 28);
             this.seat4.TabIndex = 220;
             this.seat4.Text = "4";
             this.seat4.UseVisualStyleBackColor = true;
@@ -1265,9 +1375,10 @@
             // 
             // seat2
             // 
-            this.seat2.Location = new System.Drawing.Point(329, 107);
+            this.seat2.Location = new System.Drawing.Point(439, 132);
+            this.seat2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat2.Name = "seat2";
-            this.seat2.Size = new System.Drawing.Size(27, 23);
+            this.seat2.Size = new System.Drawing.Size(36, 28);
             this.seat2.TabIndex = 219;
             this.seat2.Text = "2";
             this.seat2.UseVisualStyleBackColor = true;
@@ -1275,9 +1386,10 @@
             // 
             // seat7
             // 
-            this.seat7.Location = new System.Drawing.Point(263, 137);
+            this.seat7.Location = new System.Drawing.Point(351, 169);
+            this.seat7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat7.Name = "seat7";
-            this.seat7.Size = new System.Drawing.Size(27, 23);
+            this.seat7.Size = new System.Drawing.Size(36, 28);
             this.seat7.TabIndex = 218;
             this.seat7.Text = "7";
             this.seat7.UseVisualStyleBackColor = true;
@@ -1285,9 +1397,10 @@
             // 
             // seat6
             // 
-            this.seat6.Location = new System.Drawing.Point(461, 107);
+            this.seat6.Location = new System.Drawing.Point(615, 132);
+            this.seat6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat6.Name = "seat6";
-            this.seat6.Size = new System.Drawing.Size(27, 23);
+            this.seat6.Size = new System.Drawing.Size(36, 28);
             this.seat6.TabIndex = 217;
             this.seat6.Text = "6";
             this.seat6.UseVisualStyleBackColor = true;
@@ -1295,9 +1408,10 @@
             // 
             // seat5
             // 
-            this.seat5.Location = new System.Drawing.Point(428, 107);
+            this.seat5.Location = new System.Drawing.Point(571, 132);
+            this.seat5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat5.Name = "seat5";
-            this.seat5.Size = new System.Drawing.Size(27, 23);
+            this.seat5.Size = new System.Drawing.Size(36, 28);
             this.seat5.TabIndex = 216;
             this.seat5.Text = "5";
             this.seat5.UseVisualStyleBackColor = true;
@@ -1305,9 +1419,10 @@
             // 
             // seat3
             // 
-            this.seat3.Location = new System.Drawing.Point(362, 107);
+            this.seat3.Location = new System.Drawing.Point(483, 132);
+            this.seat3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat3.Name = "seat3";
-            this.seat3.Size = new System.Drawing.Size(27, 23);
+            this.seat3.Size = new System.Drawing.Size(36, 28);
             this.seat3.TabIndex = 215;
             this.seat3.Text = "3";
             this.seat3.UseVisualStyleBackColor = true;
@@ -1315,30 +1430,22 @@
             // 
             // seat1
             // 
-            this.seat1.Location = new System.Drawing.Point(295, 107);
+            this.seat1.Location = new System.Drawing.Point(393, 132);
+            this.seat1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.seat1.Name = "seat1";
-            this.seat1.Size = new System.Drawing.Size(27, 23);
+            this.seat1.Size = new System.Drawing.Size(36, 28);
             this.seat1.TabIndex = 214;
             this.seat1.Text = "1";
             this.seat1.UseVisualStyleBackColor = true;
             this.seat1.Click += new System.EventHandler(this.seat1_Click);
             // 
-            // clear
-            // 
-            this.clear.Location = new System.Drawing.Point(15, 166);
-            this.clear.Name = "clear";
-            this.clear.Size = new System.Drawing.Size(103, 23);
-            this.clear.TabIndex = 319;
-            this.clear.Text = "Clear Selection";
-            this.clear.UseVisualStyleBackColor = true;
-            this.clear.Click += new System.EventHandler(this.clear_Click);
-            // 
             // seats
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1055, 681);
+            this.ClientSize = new System.Drawing.Size(1407, 838);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "seats";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.seats_Load);

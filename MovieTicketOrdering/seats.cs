@@ -28,6 +28,7 @@ namespace MovieTicketOrdering
         }
         private void updateTaken()
         {
+            //compare buttons with taken seats, turn ovelapping (therefore taken) sets read
             foreach (Button b in panel1.Controls)
             {
                 foreach (int i in taken)
@@ -39,8 +40,12 @@ namespace MovieTicketOrdering
                 }
             }
         }
+
+        //NOTE: i feel like this is where we could cap it at 4, like if(list.length == 4) 
+        //change a message box to 0 seats remining or something
         private void updateChoosen()
         {
+            //compare all seats with cuser-chosen seats, update per seat selection to turn requested seats yellow
             foreach (Button b in panel1.Controls)
             {
                 foreach (int i in choosen)
@@ -53,6 +58,26 @@ namespace MovieTicketOrdering
                 }
             }
         }
+        //i feel like you could combine isntTaken and isntChosen into one function
+        /*
+         isavailable(int seat){
+            foreach(int i in taken)
+            {
+                if(i == seat)
+                {
+                    return false;
+                }
+            }
+            foreach (int i in choosen)
+            {
+                if(i == seat)
+                {
+                    return false;
+                }
+            }
+            return true
+        }
+         */
         private bool isntTaken(int seat)
         {
             foreach(int i in taken)
@@ -85,6 +110,22 @@ namespace MovieTicketOrdering
             }
             updateTaken();
         }
+
+        /*
+         * i know you have them all written out, but this might make it eaiser to read, plus its less lines of code,
+         * if for each seat clicked you jsut send the seat number tot his function, this will be what delegates
+         * 
+        private void seatClicked(int seat)
+        {
+            if (isntTaken(seat) && isntSelected(seat) && choosen.Count < 4)
+            //or if you combine taken and seledted
+            //if(isAvailable(seat) && chosen.count < 4)
+            {
+                choosen.Add(seat);
+            }
+            updateChoosen();
+        }
+        */
         
         private void seat1_Click(object sender, EventArgs e)
         {

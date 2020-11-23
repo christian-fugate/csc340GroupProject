@@ -20,6 +20,7 @@ namespace MovieTicketOrdering
         {
 
         }
+
         public List<int> getSeats() //this will be used by seats to get the already taken seats. 
         {
 
@@ -34,7 +35,7 @@ namespace MovieTicketOrdering
 
                 Console.WriteLine("Connecting to MySQL...");
                 conn.Open();
-                string sql = "SELECT seat FROM few_tickets;";
+                string sql = "SELECT seat FROM few_tickets;";   //at one point we are going to need to add "WHERE show name is [insert name]
                 MySql.Data.MySqlClient.MySqlCommand cmd = new MySql.Data.MySqlClient.MySqlCommand(sql, conn);
                 MySqlDataReader myReader = cmd.ExecuteReader();
                 while (myReader.Read())
