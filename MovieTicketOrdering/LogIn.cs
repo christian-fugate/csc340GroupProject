@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace MovieTicketOrdering
 {
-    public partial class mainMenu : Form
+    public partial class LogIn : Form
     {
-        public mainMenu()
+        public LogIn()
         {
             InitializeComponent();
         }
-
-        private void seats_Click(object sender, EventArgs e)
-        {
-            Form seat = new seats();
-            seat.Show();
-        }
-
-        
     }
 }
