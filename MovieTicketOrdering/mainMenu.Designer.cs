@@ -29,32 +29,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.logIn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.theaterInfo = new System.Windows.Forms.Button();
+            this.seeShows = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // logIn
             // 
-            this.button1.Location = new System.Drawing.Point(382, 294);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Log In";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(486, 294);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Sign Up";
-            this.button2.UseVisualStyleBackColor = true;
+            this.logIn.Location = new System.Drawing.Point(413, 294);
+            this.logIn.Name = "logIn";
+            this.logIn.Size = new System.Drawing.Size(77, 43);
+            this.logIn.TabIndex = 0;
+            this.logIn.Text = "Log In Or Sign Up";
+            this.logIn.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -64,23 +54,23 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // button3
+            // theaterInfo
             // 
-            this.button3.Location = new System.Drawing.Point(76, 367);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(114, 48);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Staff and Theater Info";
-            this.button3.UseVisualStyleBackColor = true;
+            this.theaterInfo.Location = new System.Drawing.Point(76, 367);
+            this.theaterInfo.Name = "theaterInfo";
+            this.theaterInfo.Size = new System.Drawing.Size(114, 48);
+            this.theaterInfo.TabIndex = 3;
+            this.theaterInfo.Text = "Staff and Theater Info";
+            this.theaterInfo.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // seeShows
             // 
-            this.button4.Location = new System.Drawing.Point(382, 265);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(138, 23);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "See Show Information";
-            this.button4.UseVisualStyleBackColor = true;
+            this.seeShows.Location = new System.Drawing.Point(382, 265);
+            this.seeShows.Name = "seeShows";
+            this.seeShows.Size = new System.Drawing.Size(138, 23);
+            this.seeShows.TabIndex = 4;
+            this.seeShows.Text = "See Show Information";
+            this.seeShows.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -98,13 +88,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(613, 450);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.seeShows);
+            this.Controls.Add(this.theaterInfo);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.logIn);
             this.Name = "mainMenu";
-            this.Text = "Form1";
+            this.Text = "FEW Theater";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -113,11 +102,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button logIn;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button theaterInfo;
+        private System.Windows.Forms.Button seeShows;
         private System.Windows.Forms.Label label1;
     }
 }
