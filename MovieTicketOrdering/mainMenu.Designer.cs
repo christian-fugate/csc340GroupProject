@@ -45,6 +45,7 @@
             this.logIn.TabIndex = 0;
             this.logIn.Text = "Log In Or Sign Up";
             this.logIn.UseVisualStyleBackColor = true;
+            this.logIn.Click += new System.EventHandler(this.logIn_Click);
             // 
             // pictureBox1
             // 
@@ -71,6 +72,7 @@
             this.seeShows.TabIndex = 4;
             this.seeShows.Text = "See Show Information";
             this.seeShows.UseVisualStyleBackColor = true;
+            this.seeShows.Click += new System.EventHandler(this.seeShows_Click);
             // 
             // label1
             // 

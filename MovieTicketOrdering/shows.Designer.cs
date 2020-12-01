@@ -80,6 +80,7 @@
             this.Controls.Add(this.showBox);
             this.Name = "shows";
             this.Text = "Shows";
+            this.Load += new System.EventHandler(this.shows_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

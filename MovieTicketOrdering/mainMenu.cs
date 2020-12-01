@@ -23,6 +23,16 @@ namespace MovieTicketOrdering
             seat.Show();
         }
 
-        
+        private void logIn_Click(object sender, EventArgs e)
+        {
+            Form logIn = new LogIn();
+            logIn.Show();
+        }
+
+        private void seeShows_Click(object sender, EventArgs e)
+        {
+            Form shows = new shows();
+            shows.Show();
+        }
     }
 }

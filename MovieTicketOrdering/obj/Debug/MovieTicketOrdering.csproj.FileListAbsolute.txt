@@ -39,3 +39,7 @@ C:\Users\hsedw\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\obj\Debug
 C:\Users\hsedw\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\obj\Debug\MovieTicketOrdering.csproj.CopyComplete
 C:\Users\hsedw\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\obj\Debug\MovieTicketOrdering.exe
 C:\Users\hsedw\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\obj\Debug\MovieTicketOrdering.pdb
+F:\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\obj\Debug\MovieTicketOrdering.createAccount.resources
+F:\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\obj\Debug\MovieTicketOrdering.LogIn.resources
+F:\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\obj\Debug\MovieTicketOrdering.pay.resources
+F:\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\obj\Debug\MovieTicketOrdering.shows.resources

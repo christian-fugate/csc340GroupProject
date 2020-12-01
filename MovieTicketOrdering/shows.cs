@@ -16,5 +16,10 @@ namespace MovieTicketOrdering
         {
             InitializeComponent();
         }
+        showClass currentShows = new showClass();
+        private void shows_Load(object sender, EventArgs e)
+        {
+            currentShows.getShows();
+        }
     }
 }

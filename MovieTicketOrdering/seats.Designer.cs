@@ -1373,7 +1373,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Name = "seats";
-            this.Text = "Form1";
+            this.Text = "Select Your Seats";
             this.Load += new System.EventHandler(this.seats_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
