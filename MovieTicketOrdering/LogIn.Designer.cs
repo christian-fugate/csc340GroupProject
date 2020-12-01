@@ -50,12 +50,12 @@
             this.signUp = new System.Windows.Forms.Button();
             this.back = new System.Windows.Forms.Button();
             this.Input = new System.Windows.Forms.Panel();
+            this.userOrPass = new System.Windows.Forms.Label();
+            this.log = new System.Windows.Forms.Button();
             this.password = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.username = new System.Windows.Forms.TextBox();
-            this.log = new System.Windows.Forms.Button();
-            this.userOrPass = new System.Windows.Forms.Label();
             this.userfname = new System.Windows.Forms.Label();
             this.userlname = new System.Windows.Forms.Label();
             this.useremail = new System.Windows.Forms.Label();
@@ -81,6 +81,7 @@
             this.cancelTicket.TabIndex = 2;
             this.cancelTicket.Text = "Cancel Ticket";
             this.cancelTicket.UseVisualStyleBackColor = true;
+            this.cancelTicket.Click += new System.EventHandler(this.cancelTicket_Click);
             // 
             // findShow
             // 
@@ -90,6 +91,7 @@
             this.findShow.TabIndex = 3;
             this.findShow.Text = "Find Show";
             this.findShow.UseVisualStyleBackColor = true;
+            this.findShow.Click += new System.EventHandler(this.findShow_Click);
             // 
             // label2
             // 
@@ -253,10 +255,28 @@
             this.Input.Controls.Add(this.label4);
             this.Input.Controls.Add(this.label3);
             this.Input.Controls.Add(this.username);
-            this.Input.Location = new System.Drawing.Point(12, 14);
+            this.Input.Location = new System.Drawing.Point(12, 12);
             this.Input.Name = "Input";
             this.Input.Size = new System.Drawing.Size(776, 414);
             this.Input.TabIndex = 24;
+            // 
+            // userOrPass
+            // 
+            this.userOrPass.AutoSize = true;
+            this.userOrPass.Location = new System.Drawing.Point(212, 225);
+            this.userOrPass.Name = "userOrPass";
+            this.userOrPass.Size = new System.Drawing.Size(0, 13);
+            this.userOrPass.TabIndex = 12;
+            // 
+            // log
+            // 
+            this.log.Location = new System.Drawing.Point(334, 199);
+            this.log.Name = "log";
+            this.log.Size = new System.Drawing.Size(75, 23);
+            this.log.TabIndex = 11;
+            this.log.Text = "Log In";
+            this.log.UseVisualStyleBackColor = true;
+            this.log.Click += new System.EventHandler(this.log_Click);
             // 
             // password
             // 
@@ -291,24 +311,6 @@
             this.username.Size = new System.Drawing.Size(161, 20);
             this.username.TabIndex = 7;
             this.username.TextChanged += new System.EventHandler(this.username_TextChanged);
-            // 
-            // log
-            // 
-            this.log.Location = new System.Drawing.Point(334, 199);
-            this.log.Name = "log";
-            this.log.Size = new System.Drawing.Size(75, 23);
-            this.log.TabIndex = 11;
-            this.log.Text = "Log In";
-            this.log.UseVisualStyleBackColor = true;
-            this.log.Click += new System.EventHandler(this.log_Click);
-            // 
-            // userOrPass
-            // 
-            this.userOrPass.AutoSize = true;
-            this.userOrPass.Location = new System.Drawing.Point(212, 225);
-            this.userOrPass.Name = "userOrPass";
-            this.userOrPass.Size = new System.Drawing.Size(0, 13);
-            this.userOrPass.TabIndex = 12;
             // 
             // userfname
             // 
@@ -351,10 +353,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.usercardnumber);
-            this.Controls.Add(this.useremail);
-            this.Controls.Add(this.userlname);
-            this.Controls.Add(this.userfname);
             this.Controls.Add(this.back);
             this.Controls.Add(this.signUp);
             this.Controls.Add(this.Input);
@@ -377,6 +375,10 @@
             this.Controls.Add(this.findShow);
             this.Controls.Add(this.cancelTicket);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.usercardnumber);
+            this.Controls.Add(this.useremail);
+            this.Controls.Add(this.userlname);
+            this.Controls.Add(this.userfname);
             this.Name = "LogIn";
             this.Text = "Log In ";
             this.Input.ResumeLayout(false);

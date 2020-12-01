@@ -15,20 +15,54 @@ namespace MovieTicketOrdering
         List<int> choosen = new List<int>();
         List<int> taken = new List<int>();
         order order = new order();
+        int userID = -1;
+        string userName = "-1";
+        public string[] curshow = new string[5];
         public seats()
         {
             InitializeComponent();
+           
         }
-        
+        public seats(string[] c)
+        {
+            InitializeComponent();
+            curshow = c;
+        }
+        public seats(string[] c, int uID, string uName)
+        {
+            InitializeComponent();
+            curshow = c;
+            userID = uID;
+            userName = uName;
+        }
 
         private void seats_Load(object sender, EventArgs e)
         {
-            taken = order.getSeats();
+            datePicker.MinDate = datePicker.TodayDate;
+            datePicker.MaxDate = DateTime.Parse(curshow[0]).Add(TimeSpan.FromDays(60.0));
+            //datePicker.SetSelectionRange(DateTime.Parse(curshow[0]), DateTime.Parse(curshow[0]).Add(TimeSpan.FromDays(60.0)));
+            
+            taken = order.getSeats(curshow[3], datePicker.SelectionRange.Start.ToString("yyyy-MM-dd"));
+            Console.WriteLine("Current Date");
+            Console.WriteLine(datePicker.SelectionRange.Start.ToString("yyyy-MM-dd"));
             updateTaken();
+        }
+        private void datePicker_DateChanged(object sender, DateRangeEventArgs e)
+        {
+            taken = order.getSeats(curshow[3], datePicker.SelectionRange.Start.ToString("yyyy-MM-dd"));
+            choosen.Clear();
+            updateTaken();
+            Console.WriteLine();
+        }
+        private void backToShows_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
         private void updateTaken()
         {
             //compare buttons with taken seats, turn ovelapping (therefore taken) sets read
+            foreach (Button b in panel1.Controls)
+                b.BackColor = Color.White;
             foreach (Button b in panel1.Controls)
             {
                 foreach (int i in taken)
@@ -37,10 +71,24 @@ namespace MovieTicketOrdering
                     {
                         b.BackColor = Color.Red; //this means taken
                     }
+                   
                 }
             }
         }
-
+        private void clear_Click(object sender, EventArgs e)
+                {
+                    choosen.Clear();
+                    foreach(Button b in panel1.Controls)
+                    {
+                        b.BackColor = Color.Gainsboro;
+                    }
+                    updateTaken();
+                }
+        private void proceedOrder_Click(object sender, EventArgs e)
+        {
+            Form pay = new pay(userID, choosen, userName, curshow, datePicker.SelectionRange.Start.ToString("yyyy-MM-dd"));
+            pay.Show();
+        }
         //NOTE: i feel like this is where we could cap it at 4, like if(list.length == 4) 
         //change a message box to 0 seats remining or something
         private void updateChoosen()
@@ -100,16 +148,7 @@ namespace MovieTicketOrdering
             }
             return true;
         }
-        private void clear_Click(object sender, EventArgs e)
-        {
-            
-            choosen.Clear();
-            foreach(Button b in panel1.Controls)
-            {
-                b.BackColor = Color.Gainsboro;
-            }
-            updateTaken();
-        }
+        
 
         /*
          * i know you have them all written out, but this might make it eaiser to read, plus its less lines of code,
@@ -1068,11 +1107,6 @@ namespace MovieTicketOrdering
         
 
         private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
 
         }

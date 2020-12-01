@@ -33,6 +33,7 @@ namespace MovieTicketOrdering
                     string[] curshow = new string[5];
                     //show start date
                     curshow[0] = myReader.GetString(0).Substring(0, myReader.GetString(0).Length - 12);
+                    Console.WriteLine(DateTime.Parse(myReader.GetString(0).Substring(0, myReader.GetString(0).Length - 12)));
                     Console.WriteLine(curshow[0]);
                     //show end date
                     curshow[1] = myReader.GetString(1).Substring(0, myReader.GetString(1).Length - 12);

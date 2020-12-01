@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.ticketbox = new System.Windows.Forms.ListView();
             this.label1 = new System.Windows.Forms.Label();
             this.confirmPay = new System.Windows.Forms.Button();
             this.userName = new System.Windows.Forms.Label();
@@ -36,23 +36,23 @@
             this.backSeats = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // listView1
+            // ticketbox
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(112, 122);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(135, 142);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.ticketbox.HideSelection = false;
+            this.ticketbox.Location = new System.Drawing.Point(112, 122);
+            this.ticketbox.Name = "ticketbox";
+            this.ticketbox.Size = new System.Drawing.Size(135, 142);
+            this.ticketbox.TabIndex = 0;
+            this.ticketbox.UseCompatibleStateImageBehavior = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(109, 92);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.Size = new System.Drawing.Size(42, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Seats";
+            this.label1.Text = "Tickets";
             // 
             // confirmPay
             // 
@@ -100,9 +100,10 @@
             this.Controls.Add(this.userName);
             this.Controls.Add(this.confirmPay);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.ticketbox);
             this.Name = "pay";
             this.Text = "Confirm Order";
+            this.Load += new System.EventHandler(this.pay_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,7 +111,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView ticketbox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button confirmPay;
         private System.Windows.Forms.Label userName;

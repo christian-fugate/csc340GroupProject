@@ -52,5 +52,16 @@ namespace MovieTicketOrdering
             Form create = new createAccount();
             create.Show();
         }
+
+        private void findShow_Click(object sender, EventArgs e)
+        {
+            Form shows = new shows(user.accountID);
+            shows.Show();
+        }
+
+        private void cancelTicket_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

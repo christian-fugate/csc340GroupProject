@@ -17,11 +17,7 @@ namespace MovieTicketOrdering
             InitializeComponent();
         }
 
-        private void seats_Click(object sender, EventArgs e)
-        {
-            Form seat = new seats();
-            seat.Show();
-        }
+       
 
         private void logIn_Click(object sender, EventArgs e)
         {

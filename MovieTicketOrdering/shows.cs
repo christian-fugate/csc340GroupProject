@@ -12,11 +12,20 @@ namespace MovieTicketOrdering
 {
     public partial class shows : Form
     {
+        showClass currentShows = new showClass();
+        int userID = -1;
+        string username;
         public shows()
         {
             InitializeComponent();
         }
-        showClass currentShows = new showClass();
+        public shows(int uID, string uName)
+        {
+            InitializeComponent();
+            userID = uID;
+            username = uName;
+        }
+        
         private void shows_Load(object sender, EventArgs e)
         {
             currentShows.getShows();
@@ -42,13 +51,22 @@ namespace MovieTicketOrdering
 
         private void orderTickets_Click(object sender, EventArgs e)
         {
-            if (showBox.SelectedIndex != -1)
+            if (showBox.SelectedIndex != -1 && userID != -1)
             {
-                Form seats = new seats();
-                seats.Show();
+                Form seatOrder = new seats(currentShows.shows[showBox.SelectedIndex], userID, username);
+                seatOrder.Show();
+            }
+            else if (showBox.SelectedIndex != -1)
+            {
+                Form login = new LogIn();
+                login.Show();
+                this.Close();
             }
             else
-                selectAShow.Text = "Select a show and try again";
+            {
+                selectAShow.Text = "Select a show before continuing";
+            }
+                
         }
     }
 }

@@ -12,16 +12,13 @@ namespace MovieTicketOrdering
 {
     class order
     {
-        private void createOrder()
+        private void createOrder(List<int> selected)
         {
 
         }
-        private void cancelOrder()
-        {
+        
 
-        }
-
-        public List<int> getSeats() //this will be used by seats to get the already taken seats. 
+        public List<int> getSeats(string show, string selected) //this will be used by seats to get the already taken seats. 
         {
 
 
@@ -35,7 +32,8 @@ namespace MovieTicketOrdering
 
                 Console.WriteLine("Connecting to MySQL...");
                 conn.Open();
-                string sql = "SELECT seat FROM few_tickets;";   //at one point we are going to need to add "WHERE show name is [insert name]
+                Console.WriteLine(show);
+                string sql = "SELECT seat FROM few_tickets WHERE showDate = '"+selected+"' AND showName = '"+show+"';";   //at one point we are going to need to add "WHERE show name is [insert name]
                 MySql.Data.MySqlClient.MySqlCommand cmd = new MySql.Data.MySqlClient.MySqlCommand(sql, conn);
                 MySqlDataReader myReader = cmd.ExecuteReader();
                 while (myReader.Read())

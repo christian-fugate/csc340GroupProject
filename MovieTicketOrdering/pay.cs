@@ -12,9 +12,24 @@ namespace MovieTicketOrdering
 {
     public partial class pay : Form
     {
-        public pay()
+        int userID = -1;
+        List<int> curSeats;
+        order cur = new order();
+        string[] curshow;
+        string date;
+        public pay(int uID, List<int> selected, string uName, string[] c, string d)
         {
             InitializeComponent();
+            userID = uID;
+            userName.Text = uName + "";
+            curSeats = selected;
+            curshow = c;
+            date = d;
+        }
+
+        private void pay_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

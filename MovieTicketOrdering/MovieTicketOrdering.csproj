@@ -91,6 +91,7 @@
     <Compile Include="shows.Designer.cs">
       <DependentUpon>shows.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ticket.cs" />
     <EmbeddedResource Include="createAccount.resx">
       <DependentUpon>createAccount.cs</DependentUpon>
     </EmbeddedResource>
