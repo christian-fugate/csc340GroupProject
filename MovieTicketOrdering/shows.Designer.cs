@@ -39,8 +39,9 @@
             this.showBox.FormattingEnabled = true;
             this.showBox.Location = new System.Drawing.Point(40, 73);
             this.showBox.Name = "showBox";
-            this.showBox.Size = new System.Drawing.Size(207, 342);
+            this.showBox.Size = new System.Drawing.Size(294, 342);
             this.showBox.TabIndex = 0;
+            this.showBox.SelectedIndexChanged += new System.EventHandler(this.showBox_SelectedIndexChanged);
             // 
             // backToLogin
             // 
@@ -53,7 +54,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(391, 348);
+            this.button1.Location = new System.Drawing.Point(455, 348);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(92, 23);
             this.button1.TabIndex = 2;
@@ -62,7 +63,7 @@
             // 
             // showDescription
             // 
-            this.showDescription.Location = new System.Drawing.Point(326, 73);
+            this.showDescription.Location = new System.Drawing.Point(388, 73);
             this.showDescription.Multiline = true;
             this.showDescription.Name = "showDescription";
             this.showDescription.Size = new System.Drawing.Size(227, 269);

@@ -20,6 +20,18 @@ namespace MovieTicketOrdering
         private void shows_Load(object sender, EventArgs e)
         {
             currentShows.getShows();
+            foreach (string[] show in currentShows.shows)
+            {
+                string cur = "";
+                cur += show[3];
+                cur += "  The Show time is: " + show[2];
+                showBox.Items.Add(cur);
+            }
+        }
+
+        private void showBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            showDescription.Text = currentShows.shows[showBox.SelectedIndex][4];
         }
     }
 }
