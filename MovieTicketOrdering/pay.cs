@@ -19,6 +19,7 @@ namespace MovieTicketOrdering
         string date;
         List<Ticket> tickets = new List<Ticket>();
         account curAccount = new account();
+        double totalPrice = 0.00;
         public pay(int uID, List<int> selected, string uName, string[] c, string d)
         {
             InitializeComponent();
@@ -47,13 +48,23 @@ namespace MovieTicketOrdering
                 Console.WriteLine(curTicket.price);
                 tickets.Add(curTicket);
             }
-            
+            foreach (Ticket t in tickets)
+            {
+                totalPrice += t.price;
+                string display = "" + t.showName + "  " + t.showDate + "   $" + t.price +"0";
+                ticketbox.Items.Add(display);
+            }
+            if (curAccount.isMember == 1)
+                totalPrice = totalPrice - totalPrice * .10; //10% off for the members
+
+
         }
 
         private void confirmPay_Click(object sender, EventArgs e)
         {
+            
             if(curSeats.Count>0)
-                cur.createOrder(tickets);
+                cur.createOrder(tickets,curAccount.cardNumber, totalPrice, curAccount.email);
             curSeats.Clear();
             //change textbox to check user info 
             

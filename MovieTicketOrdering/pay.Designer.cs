@@ -28,22 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ticketbox = new System.Windows.Forms.ListView();
             this.label1 = new System.Windows.Forms.Label();
             this.confirmPay = new System.Windows.Forms.Button();
             this.userName = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.backSeats = new System.Windows.Forms.Button();
+            this.ticketbox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
-            // 
-            // ticketbox
-            // 
-            this.ticketbox.HideSelection = false;
-            this.ticketbox.Location = new System.Drawing.Point(112, 122);
-            this.ticketbox.Name = "ticketbox";
-            this.ticketbox.Size = new System.Drawing.Size(135, 142);
-            this.ticketbox.TabIndex = 0;
-            this.ticketbox.UseCompatibleStateImageBehavior = false;
             // 
             // label1
             // 
@@ -91,17 +82,25 @@
             this.backSeats.Text = "Back To Seats";
             this.backSeats.UseVisualStyleBackColor = true;
             // 
+            // ticketbox
+            // 
+            this.ticketbox.FormattingEnabled = true;
+            this.ticketbox.Location = new System.Drawing.Point(88, 108);
+            this.ticketbox.Name = "ticketbox";
+            this.ticketbox.Size = new System.Drawing.Size(155, 212);
+            this.ticketbox.TabIndex = 6;
+            // 
             // pay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 415);
+            this.Controls.Add(this.ticketbox);
             this.Controls.Add(this.backSeats);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.userName);
             this.Controls.Add(this.confirmPay);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.ticketbox);
             this.Name = "pay";
             this.Text = "Confirm Order";
             this.Load += new System.EventHandler(this.pay_Load);
@@ -111,12 +110,11 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ListView ticketbox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button confirmPay;
         private System.Windows.Forms.Label userName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button backSeats;
+        private System.Windows.Forms.ListBox ticketbox;
     }
 }
