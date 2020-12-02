@@ -19,11 +19,10 @@ namespace MovieTicketOrdering
         {
             InitializeComponent();
         }
-        public shows(int uID, string uName)
+        public shows(int uID)
         {
             InitializeComponent();
             userID = uID;
-            username = uName;
         }
         
         private void shows_Load(object sender, EventArgs e)

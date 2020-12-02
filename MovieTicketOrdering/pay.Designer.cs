@@ -62,6 +62,7 @@
             this.confirmPay.TabIndex = 2;
             this.confirmPay.Text = "Confirm and Pay";
             this.confirmPay.UseVisualStyleBackColor = true;
+            this.confirmPay.Click += new System.EventHandler(this.confirmPay_Click);
             // 
             // userName
             // 

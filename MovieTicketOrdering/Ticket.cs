@@ -8,13 +8,13 @@ namespace MovieTicketOrdering
 {
     class Ticket
     {
-        int ticketNum;
-        int seat;
-        string showName;
-        int orderNumber;
-        int isValid; //if 0 false 1 true
-        int price;
-        string showDate;
+        public int ticketNum;
+        public int seat;
+        public string showName;
+        public int orderNumber;
+        public int isValid; //if 0 false 1 true
+        public double price;
+        public string showDate;
         public void cancelTicket(int number)
         {
 

@@ -21,7 +21,41 @@ namespace MovieTicketOrdering
         public string email = "";
         public string cardNumber = "";
         public bool goodUsername = false;
-        
+        public void getAccount(int id)
+        {
+            string connStr = "server=157.89.28.130;user=ChangK;database=csc340;port=3306;password=Wallace#409;";
+
+            MySql.Data.MySqlClient.MySqlConnection conn = new MySql.Data.MySqlClient.MySqlConnection(connStr);
+
+            try
+            {
+
+                Console.WriteLine("Connecting to MySQL...");
+                conn.Open();
+                string sql = "SELECT * from few_accountholder WHERE accountID = '" + id + "';";   //at one point we are going to need to add "WHERE show name is [insert name]
+                MySql.Data.MySqlClient.MySqlCommand cmd = new MySql.Data.MySqlClient.MySqlCommand(sql, conn);
+                MySqlDataReader myReader = cmd.ExecuteReader();
+                while (myReader.Read())
+                {
+
+                    accountID = myReader.GetInt32(0);
+                    isMember = myReader.GetInt32(1);
+                    username = myReader.GetString(2);
+                    password = myReader.GetString(3);
+                    firstName = myReader.GetString(4);
+                    lastName = myReader.GetString(5);
+                    email = myReader.GetString(6);
+                    cardNumber = myReader.GetString(7);
+                }
+                myReader.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            conn.Close();
+            Console.WriteLine("Done.");
+        }
         public void logIn()
         {
             //gather info from database
@@ -38,7 +72,6 @@ namespace MovieTicketOrdering
                 MySql.Data.MySqlClient.MySqlCommand cmd = new MySql.Data.MySqlClient.MySqlCommand(sql, conn);
                 MySqlDataReader myReader = cmd.ExecuteReader();
                 Console.WriteLine("selected");
-                int count = 0;
                 while (myReader.Read())
                 {
 

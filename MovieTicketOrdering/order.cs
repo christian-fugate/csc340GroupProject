@@ -12,9 +12,33 @@ namespace MovieTicketOrdering
 {
     class order
     {
-        private void createOrder(List<int> selected)
+        public void createOrder(List<Ticket>tickets)
         {
+            string connStr = "server=157.89.28.130;user=ChangK;database=csc340;port=3306;password=Wallace#409;";
 
+            MySql.Data.MySqlClient.MySqlConnection conn = new MySql.Data.MySqlClient.MySqlConnection(connStr);
+            Console.WriteLine("Connecting to MySQL...");
+            conn.Open();
+            foreach (Ticket t in tickets){
+                try
+                {
+                    string sql = "INSERT INTO few_tickets (seat, showDate, showName, price) VALUES ("+t.seat+",'"+t.showDate+"','"+t.showName+"',"+t.price+");";
+                    Console.WriteLine(sql);
+                    MySql.Data.MySqlClient.MySqlCommand cmd = new MySql.Data.MySqlClient.MySqlCommand(sql, conn);
+                    MySqlDataReader myReader = cmd.ExecuteReader();
+
+                    myReader.Close();
+
+
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.ToString());
+                }
+                
+                Console.WriteLine("Done.");
+            }
+            conn.Close();
         }
         
 
