@@ -118,6 +118,7 @@
             this.ticketBox.Name = "ticketBox";
             this.ticketBox.Size = new System.Drawing.Size(162, 303);
             this.ticketBox.TabIndex = 9;
+            this.ticketBox.SelectedIndexChanged += new System.EventHandler(this.ticketBox_SelectedIndexChanged);
             // 
             // fName
             // 
@@ -255,7 +256,7 @@
             this.Input.Controls.Add(this.label4);
             this.Input.Controls.Add(this.label3);
             this.Input.Controls.Add(this.username);
-            this.Input.Location = new System.Drawing.Point(12, 12);
+            this.Input.Location = new System.Drawing.Point(36, 431);
             this.Input.Name = "Input";
             this.Input.Size = new System.Drawing.Size(776, 414);
             this.Input.TabIndex = 24;

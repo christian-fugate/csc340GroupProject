@@ -17,6 +17,7 @@ namespace MovieTicketOrdering
             InitializeComponent();
         }
         account user = new account();
+        Ticket selectedTicket = new Ticket();
         
 
         private void username_TextChanged(object sender, EventArgs e)
@@ -34,15 +35,17 @@ namespace MovieTicketOrdering
             if(user.firstName.Length > 0)
             {
                 Input.Hide();
+                userfname.Text = user.firstName;
+                userlname.Text = user.lastName;
+                useremail.Text = user.email;
+                usercardnumber.Text = user.cardNumber;
+                
             }
             else
             {
                 userOrPass.Text = "Username or Password is incorect or you dont have an account";
             }
-            userfname.Text = user.firstName;
-            userlname.Text = user.lastName;
-            useremail.Text = user.email;
-            usercardnumber.Text = user.cardNumber;
+            
 
 
         }
@@ -62,6 +65,11 @@ namespace MovieTicketOrdering
         private void cancelTicket_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void ticketBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            selectedTicket.ticketNum; 
         }
     }
 }

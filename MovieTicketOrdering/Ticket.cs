@@ -19,5 +19,14 @@ namespace MovieTicketOrdering
         {
 
         }
+        public List<Ticket> userTickets(int uID)
+        {
+            List<Ticket> uTickets = new List<Ticket>();
+
+
+
+            return uTickets;
+            
+        }
     }
 }
