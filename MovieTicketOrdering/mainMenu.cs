@@ -30,5 +30,11 @@ namespace MovieTicketOrdering
             Form shows = new shows();
             shows.Show();
         }
+
+        private void theaterInfo_Click(object sender, EventArgs e)
+        {
+            Form tInfo = new theaterInfo();
+            tInfo.Show();
+        }
     }
 }

@@ -70,7 +70,7 @@ namespace MovieTicketOrdering
                 Console.WriteLine("Connecting to MySQL...");
                 conn.Open();
                 Console.WriteLine(show);
-                string sql = "SELECT seat FROM few_tickets WHERE showDate = '"+selected+"' AND showName = '"+show+"';";   //at one point we are going to need to add "WHERE show name is [insert name]
+                string sql = "SELECT seat FROM few_tickets WHERE showDate = '"+selected+"' AND showName = '"+show+"' AND isValid = 1;";   //at one point we are going to need to add "WHERE show name is [insert name]
                 MySql.Data.MySqlClient.MySqlCommand cmd = new MySql.Data.MySqlClient.MySqlCommand(sql, conn);
                 MySqlDataReader myReader = cmd.ExecuteReader();
                 while (myReader.Read())

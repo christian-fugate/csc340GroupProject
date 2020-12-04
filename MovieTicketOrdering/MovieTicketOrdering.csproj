@@ -91,6 +91,12 @@
     <Compile Include="shows.Designer.cs">
       <DependentUpon>shows.cs</DependentUpon>
     </Compile>
+    <Compile Include="theaterInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="theaterInfo.Designer.cs">
+      <DependentUpon>theaterInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ticket.cs" />
     <EmbeddedResource Include="createAccount.resx">
       <DependentUpon>createAccount.cs</DependentUpon>
@@ -118,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="shows.resx">
       <DependentUpon>shows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="theaterInfo.resx">
+      <DependentUpon>theaterInfo.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

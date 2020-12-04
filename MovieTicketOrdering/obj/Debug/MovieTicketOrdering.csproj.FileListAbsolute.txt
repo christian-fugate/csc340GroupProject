@@ -64,3 +64,4 @@ C:\Users\batma\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\bin\Debug
 C:\Users\batma\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\bin\Debug\Renci.SshNet.dll
 C:\Users\batma\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\bin\Debug\MySql.Data.xml
 C:\Users\batma\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\obj\Debug\MovieTicketOrdering.csproj.CopyComplete
+F:\Documents\GitHub\csc340GroupProject\MovieTicketOrdering\obj\Debug\MovieTicketOrdering.theaterInfo.resources

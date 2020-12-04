@@ -61,8 +61,9 @@
             this.theaterInfo.Name = "theaterInfo";
             this.theaterInfo.Size = new System.Drawing.Size(114, 48);
             this.theaterInfo.TabIndex = 3;
-            this.theaterInfo.Text = "Staff and Theater Info";
+            this.theaterInfo.Text = "Staff Only";
             this.theaterInfo.UseVisualStyleBackColor = true;
+            this.theaterInfo.Click += new System.EventHandler(this.theaterInfo_Click);
             // 
             // seeShows
             // 
