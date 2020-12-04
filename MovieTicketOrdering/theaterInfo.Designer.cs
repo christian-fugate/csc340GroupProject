@@ -35,6 +35,12 @@
             this.totalCanceled = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.showDate = new System.Windows.Forms.MonthCalendar();
+            this.emplogin = new System.Windows.Forms.Panel();
+            this.back = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.password = new System.Windows.Forms.TextBox();
+            this.logIn = new System.Windows.Forms.Button();
+            this.emplogin.SuspendLayout();
             this.SuspendLayout();
             // 
             // showBox
@@ -97,11 +103,59 @@
             this.showDate.TabIndex = 7;
             this.showDate.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.showDate_DateChanged);
             // 
+            // emplogin
+            // 
+            this.emplogin.Controls.Add(this.logIn);
+            this.emplogin.Controls.Add(this.password);
+            this.emplogin.Controls.Add(this.label2);
+            this.emplogin.Controls.Add(this.back);
+            this.emplogin.Location = new System.Drawing.Point(12, 12);
+            this.emplogin.Name = "emplogin";
+            this.emplogin.Size = new System.Drawing.Size(916, 504);
+            this.emplogin.TabIndex = 8;
+            // 
+            // back
+            // 
+            this.back.Location = new System.Drawing.Point(13, 13);
+            this.back.Name = "back";
+            this.back.Size = new System.Drawing.Size(75, 23);
+            this.back.TabIndex = 0;
+            this.back.Text = "Back";
+            this.back.UseVisualStyleBackColor = true;
+            this.back.Click += new System.EventHandler(this.back_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(352, 174);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(148, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Enter the Employee Password";
+            // 
+            // password
+            // 
+            this.password.Location = new System.Drawing.Point(342, 214);
+            this.password.Name = "password";
+            this.password.Size = new System.Drawing.Size(170, 20);
+            this.password.TabIndex = 2;
+            // 
+            // logIn
+            // 
+            this.logIn.Location = new System.Drawing.Point(385, 260);
+            this.logIn.Name = "logIn";
+            this.logIn.Size = new System.Drawing.Size(75, 23);
+            this.logIn.TabIndex = 3;
+            this.logIn.Text = "Login";
+            this.logIn.UseVisualStyleBackColor = true;
+            this.logIn.Click += new System.EventHandler(this.logIn_Click);
+            // 
             // theaterInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(940, 528);
+            this.Controls.Add(this.emplogin);
             this.Controls.Add(this.showDate);
             this.Controls.Add(this.totalCanceled);
             this.Controls.Add(this.label3);
@@ -111,6 +165,8 @@
             this.Controls.Add(this.showBox);
             this.Name = "theaterInfo";
             this.Text = "theaterInfo";
+            this.emplogin.ResumeLayout(false);
+            this.emplogin.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -125,5 +181,10 @@
         private System.Windows.Forms.Label totalCanceled;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.MonthCalendar showDate;
+        private System.Windows.Forms.Panel emplogin;
+        private System.Windows.Forms.Button back;
+        private System.Windows.Forms.Button logIn;
+        private System.Windows.Forms.TextBox password;
+        private System.Windows.Forms.Label label2;
     }
 }

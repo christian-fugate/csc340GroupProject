@@ -69,5 +69,18 @@ namespace MovieTicketOrdering
         {
             updateTickets();
         }
+
+        private void back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void logIn_Click(object sender, EventArgs e)
+        {
+            if(password.Text == "employee1234")
+            {
+                emplogin.Hide();
+            }
+        }
     }
 }
