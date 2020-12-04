@@ -63,7 +63,7 @@ namespace MovieTicketOrdering
             //Last Date to Cancel: XX/XX/XXXX
             cancelByDate.Text ="You may cancel these tickets by:"+ DateTime.Parse(date).Subtract(TimeSpan.FromDays(2.00)).ToString("yyyy/MM/dd");
             curAccount.getAccount(userID);
-            userName.Text = curAccount.username;
+            userName.Text = curAccount.firstName + " " + curAccount.lastName;
             total.Text = "$" + Math.Round(totalPrice,2);
 
 
@@ -76,12 +76,18 @@ namespace MovieTicketOrdering
             if(curSeats.Count>0)
                 cur.createOrder(tickets,curAccount.cardNumber, totalPrice, curAccount.accountID);
             curSeats.Clear();
+            feedback.Text = "Order Successful";
             //change textbox to check user info 
-            
+
 
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void member_TextChanged(object sender, EventArgs e)
         {
 
         }

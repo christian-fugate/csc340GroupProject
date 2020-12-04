@@ -38,6 +38,7 @@
             this.total = new System.Windows.Forms.Label();
             this.member = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.feedback = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -51,7 +52,7 @@
             // 
             // confirmPay
             // 
-            this.confirmPay.Location = new System.Drawing.Point(371, 241);
+            this.confirmPay.Location = new System.Drawing.Point(370, 226);
             this.confirmPay.Name = "confirmPay";
             this.confirmPay.Size = new System.Drawing.Size(73, 47);
             this.confirmPay.TabIndex = 2;
@@ -120,7 +121,8 @@
             this.member.ReadOnly = true;
             this.member.Size = new System.Drawing.Size(109, 48);
             this.member.TabIndex = 9;
-            this.member.Text = "You arent a Member - Members get 10% of their purchases";
+            this.member.Text = "You are not a Member - Members get 10% of their purchases";
+            this.member.TextChanged += new System.EventHandler(this.member_TextChanged);
             // 
             // textBox1
             // 
@@ -131,11 +133,20 @@
             this.textBox1.TabIndex = 10;
             this.textBox1.Text = "Return to User Info and Click \"Update Tickets\" to see these tickets.";
             // 
+            // feedback
+            // 
+            this.feedback.AutoSize = true;
+            this.feedback.Location = new System.Drawing.Point(367, 276);
+            this.feedback.Name = "feedback";
+            this.feedback.Size = new System.Drawing.Size(0, 13);
+            this.feedback.TabIndex = 11;
+            // 
             // pay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(560, 383);
+            this.Controls.Add(this.feedback);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.member);
             this.Controls.Add(this.total);
@@ -165,5 +176,6 @@
         private System.Windows.Forms.Label total;
         private System.Windows.Forms.TextBox member;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label feedback;
     }
 }

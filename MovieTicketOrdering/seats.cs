@@ -39,7 +39,7 @@ namespace MovieTicketOrdering
         private void seats_Load(object sender, EventArgs e)
         {
             datePicker.MinDate = datePicker.TodayDate;
-            datePicker.MaxDate = DateTime.Parse(curshow[0]).Add(TimeSpan.FromDays(60.0));
+            datePicker.MaxDate = datePicker.TodayDate.Add(TimeSpan.FromDays(60.0));
             //datePicker.SetSelectionRange(DateTime.Parse(curshow[0]), DateTime.Parse(curshow[0]).Add(TimeSpan.FromDays(60.0)));
             
             taken = order.getSeats(curshow[3], datePicker.SelectionRange.Start.ToString("yyyy-MM-dd"));

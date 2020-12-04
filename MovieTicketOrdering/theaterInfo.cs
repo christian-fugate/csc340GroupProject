@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 
 namespace MovieTicketOrdering
 {
@@ -32,25 +33,41 @@ namespace MovieTicketOrdering
 
         private void showBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            updateTickets();
+        }
+        
+        public void updateTickets()
+        {
             tickets = shows.getAllTickets(shows.shows[showBox.SelectedIndex][3]);
             ticketBox.Items.Clear();
             canceled = 0;
+            total = 0;
             foreach (Ticket t in tickets)
             {
-                
+
                 string toAdd = "";
-                if (t.isValid == 0)
+                if (DateTime.Parse(t.showDate) == showDate.SelectionRange.Start)
                 {
-                    canceled++;
+                    if (t.isValid == 0)
+                    {
+                        canceled++;
+                        toAdd += "Cancelled ";
+                    }
+                    toAdd += t.showName + " ";
+                    toAdd += t.showDate + " Price:";
+                    toAdd += t.price + " Seate:";
+                    toAdd += t.seat; 
+                    ticketBox.Items.Add(toAdd);
+                    total++;
                 }
-                toAdd += t.showName + " ";
-                toAdd += t.showDate + " ";
-                toAdd += t.price + " ";
-                toAdd += t.seat;
-                ticketBox.Items.Add(toAdd);
             }
-            ticketSales.Text = tickets.Count + "";
+            ticketSales.Text = total + "";
             totalCanceled.Text = canceled + "";
+        }
+
+        private void showDate_DateChanged(object sender, DateRangeEventArgs e)
+        {
+            updateTickets();
         }
     }
 }
