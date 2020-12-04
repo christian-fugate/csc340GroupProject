@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.confirmPay = new System.Windows.Forms.Button();
             this.userName = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.cancelByDate = new System.Windows.Forms.Label();
             this.backSeats = new System.Windows.Forms.Button();
             this.ticketbox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
@@ -47,7 +47,7 @@
             // 
             // confirmPay
             // 
-            this.confirmPay.Location = new System.Drawing.Point(313, 217);
+            this.confirmPay.Location = new System.Drawing.Point(386, 219);
             this.confirmPay.Name = "confirmPay";
             this.confirmPay.Size = new System.Drawing.Size(73, 47);
             this.confirmPay.TabIndex = 2;
@@ -58,20 +58,20 @@
             // userName
             // 
             this.userName.AutoSize = true;
-            this.userName.Location = new System.Drawing.Point(274, 122);
+            this.userName.Location = new System.Drawing.Point(347, 124);
             this.userName.Name = "userName";
             this.userName.Size = new System.Drawing.Size(55, 13);
             this.userName.TabIndex = 3;
             this.userName.Text = "Username";
             // 
-            // label2
+            // cancelByDate
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(261, 286);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(173, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Last Date to Cancel: XX/XX/XXXX";
+            this.cancelByDate.AutoSize = true;
+            this.cancelByDate.Location = new System.Drawing.Point(334, 288);
+            this.cancelByDate.Name = "cancelByDate";
+            this.cancelByDate.Size = new System.Drawing.Size(173, 13);
+            this.cancelByDate.TabIndex = 4;
+            this.cancelByDate.Text = "Last Date to Cancel: XX/XX/XXXX";
             // 
             // backSeats
             // 
@@ -87,7 +87,7 @@
             this.ticketbox.FormattingEnabled = true;
             this.ticketbox.Location = new System.Drawing.Point(88, 108);
             this.ticketbox.Name = "ticketbox";
-            this.ticketbox.Size = new System.Drawing.Size(155, 212);
+            this.ticketbox.Size = new System.Drawing.Size(240, 212);
             this.ticketbox.TabIndex = 6;
             // 
             // pay
@@ -97,7 +97,7 @@
             this.ClientSize = new System.Drawing.Size(534, 415);
             this.Controls.Add(this.ticketbox);
             this.Controls.Add(this.backSeats);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.cancelByDate);
             this.Controls.Add(this.userName);
             this.Controls.Add(this.confirmPay);
             this.Controls.Add(this.label1);
@@ -113,7 +113,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button confirmPay;
         private System.Windows.Forms.Label userName;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label cancelByDate;
         private System.Windows.Forms.Button backSeats;
         private System.Windows.Forms.ListBox ticketbox;
     }

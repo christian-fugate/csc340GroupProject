@@ -26,7 +26,7 @@ namespace MovieTicketOrdering
             curSeats = selected;
             curshow = c;
             date = d;
-
+            userID = uID;
             curAccount.getAccount(uID);
         }
 
@@ -56,7 +56,10 @@ namespace MovieTicketOrdering
             }
             if (curAccount.isMember == 1)
                 totalPrice = totalPrice - totalPrice * .10; //10% off for the members
-
+            //Last Date to Cancel: XX/XX/XXXX
+            cancelByDate.Text = DateTime.Parse(date).Subtract(TimeSpan.FromDays(2.00)).ToString("yyyy/MM/dd");
+            curAccount.getAccount(userID);
+            userName.Text = curAccount.username;
 
         }
 
