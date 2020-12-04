@@ -149,5 +149,28 @@ namespace MovieTicketOrdering
         {
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void submitMember_Click(object sender, EventArgs e)
+        {
+            if (user.isMember == 0)
+            {
+                //this is where we would send to the owner to review their account details and decide on membership status
+                sentInfo.Text = "Your Information has been sent";
+            }
+            else
+            {
+                sentInfo.Text = "You are already a member";
+            }
+        }
+
+        private void LogIn_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -61,6 +61,8 @@
             this.useremail = new System.Windows.Forms.Label();
             this.usercardnumber = new System.Windows.Forms.Label();
             this.update = new System.Windows.Forms.Button();
+            this.submitMember = new System.Windows.Forms.Button();
+            this.sentInfo = new System.Windows.Forms.Label();
             this.Input.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -105,7 +107,7 @@
             // 
             // updateUser
             // 
-            this.updateUser.Location = new System.Drawing.Point(583, 349);
+            this.updateUser.Location = new System.Drawing.Point(585, 275);
             this.updateUser.Name = "updateUser";
             this.updateUser.Size = new System.Drawing.Size(75, 23);
             this.updateUser.TabIndex = 5;
@@ -161,7 +163,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(537, 222);
+            this.label7.Location = new System.Drawing.Point(539, 148);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(106, 13);
             this.label7.TabIndex = 14;
@@ -170,7 +172,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(541, 323);
+            this.label8.Location = new System.Drawing.Point(543, 249);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(72, 13);
             this.label8.TabIndex = 18;
@@ -179,7 +181,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(540, 300);
+            this.label9.Location = new System.Drawing.Point(542, 226);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(35, 13);
             this.label9.TabIndex = 17;
@@ -188,7 +190,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(540, 277);
+            this.label10.Location = new System.Drawing.Point(542, 203);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(61, 13);
             this.label10.TabIndex = 16;
@@ -197,7 +199,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(540, 249);
+            this.label11.Location = new System.Drawing.Point(542, 175);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(60, 13);
             this.label11.TabIndex = 15;
@@ -205,28 +207,28 @@
             // 
             // fNameChange
             // 
-            this.fNameChange.Location = new System.Drawing.Point(607, 249);
+            this.fNameChange.Location = new System.Drawing.Point(609, 175);
             this.fNameChange.Name = "fNameChange";
             this.fNameChange.Size = new System.Drawing.Size(100, 20);
             this.fNameChange.TabIndex = 19;
             // 
             // lNameChange
             // 
-            this.lNameChange.Location = new System.Drawing.Point(607, 275);
+            this.lNameChange.Location = new System.Drawing.Point(609, 201);
             this.lNameChange.Name = "lNameChange";
             this.lNameChange.Size = new System.Drawing.Size(100, 20);
             this.lNameChange.TabIndex = 20;
             // 
             // emailChange
             // 
-            this.emailChange.Location = new System.Drawing.Point(607, 297);
+            this.emailChange.Location = new System.Drawing.Point(609, 223);
             this.emailChange.Name = "emailChange";
             this.emailChange.Size = new System.Drawing.Size(100, 20);
             this.emailChange.TabIndex = 21;
             // 
             // cardChange
             // 
-            this.cardChange.Location = new System.Drawing.Point(607, 320);
+            this.cardChange.Location = new System.Drawing.Point(609, 246);
             this.cardChange.Name = "cardChange";
             this.cardChange.Size = new System.Drawing.Size(125, 20);
             this.cardChange.TabIndex = 22;
@@ -260,7 +262,7 @@
             this.Input.Controls.Add(this.label4);
             this.Input.Controls.Add(this.label3);
             this.Input.Controls.Add(this.username);
-            this.Input.Location = new System.Drawing.Point(12, 12);
+            this.Input.Location = new System.Drawing.Point(12, 15);
             this.Input.Name = "Input";
             this.Input.Size = new System.Drawing.Size(776, 423);
             this.Input.TabIndex = 24;
@@ -363,6 +365,24 @@
             this.update.UseVisualStyleBackColor = true;
             this.update.Click += new System.EventHandler(this.update_Click);
             // 
+            // submitMember
+            // 
+            this.submitMember.Location = new System.Drawing.Point(574, 304);
+            this.submitMember.Name = "submitMember";
+            this.submitMember.Size = new System.Drawing.Size(135, 64);
+            this.submitMember.TabIndex = 32;
+            this.submitMember.Text = "If You are not a member Click here to Submit Your information to become a Member";
+            this.submitMember.UseVisualStyleBackColor = true;
+            this.submitMember.Click += new System.EventHandler(this.submitMember_Click);
+            // 
+            // sentInfo
+            // 
+            this.sentInfo.AutoSize = true;
+            this.sentInfo.Location = new System.Drawing.Point(587, 374);
+            this.sentInfo.Name = "sentInfo";
+            this.sentInfo.Size = new System.Drawing.Size(0, 13);
+            this.sentInfo.TabIndex = 33;
+            // 
             // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -394,8 +414,11 @@
             this.Controls.Add(this.userlname);
             this.Controls.Add(this.userfname);
             this.Controls.Add(this.update);
+            this.Controls.Add(this.submitMember);
+            this.Controls.Add(this.sentInfo);
             this.Name = "LogIn";
             this.Text = "User Info";
+            this.Load += new System.EventHandler(this.LogIn_Load);
             this.Input.ResumeLayout(false);
             this.Input.PerformLayout();
             this.ResumeLayout(false);
@@ -437,5 +460,7 @@
         private System.Windows.Forms.Label useremail;
         private System.Windows.Forms.Label usercardnumber;
         private System.Windows.Forms.Button update;
+        private System.Windows.Forms.Button submitMember;
+        private System.Windows.Forms.Label sentInfo;
     }
 }
