@@ -69,7 +69,18 @@ namespace MovieTicketOrdering
 
         private void ticketBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            selectedTicket.ticketNum; 
+            
+        }
+
+        private void updateUser_Click(object sender, EventArgs e)
+        {
+            user.updateAccount(fNameChange.Text + "", lNameChange.Text + "", emailChange.Text + "", cardChange.Text + "");
+            userfname.Text = user.firstName;
+            userlname.Text = user.lastName;
+            useremail.Text = user.email;
+            usercardnumber.Text = user.cardNumber;
+            
+
         }
     }
 }
