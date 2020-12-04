@@ -18,7 +18,7 @@ namespace MovieTicketOrdering
         }
         account user = new account();
         Ticket selectedTicket = new Ticket();
-        
+        List<Ticket> userTickets = new List<Ticket>();
 
         private void username_TextChanged(object sender, EventArgs e)
         {
@@ -39,7 +39,24 @@ namespace MovieTicketOrdering
                 userlname.Text = user.lastName;
                 useremail.Text = user.email;
                 usercardnumber.Text = user.cardNumber;
-                
+                userTickets = selectedTicket.userTickets(user.accountID);
+                foreach(Ticket t in userTickets)
+                {
+                    string toAdd = "";
+                    toAdd += "Seat Number: " + t.seat;
+                    toAdd += " Show Title: " + t.showName;
+                    toAdd += " Show Date: " + t.showDate.Substring(0, 9);
+                    toAdd += " Price: $" + t.price +"0";
+                    if(t.isValid == 1)
+                    {
+                        toAdd += " Still Valid";
+                    }
+                    else
+                    {
+                        toAdd += " Not Valid";
+                    }
+                    ticketBox.Items.Add(toAdd);
+                }
             }
             else
             {
@@ -64,12 +81,34 @@ namespace MovieTicketOrdering
 
         private void cancelTicket_Click(object sender, EventArgs e)
         {
-
+            if (selectedTicket.isValid == 1)
+            {
+                selectedTicket.cancelTicket(selectedTicket.ticketNum);
+                ticketBox.Items.Clear();
+                userTickets = selectedTicket.userTickets(user.accountID);
+                foreach (Ticket t in userTickets)
+                {
+                    string toAdd = "";
+                    toAdd += "Seat Number: " + t.seat;
+                    toAdd += " Show Title: " + t.showName;
+                    toAdd += " Show Date: " + t.showDate.Substring(0, 9);
+                    toAdd += " Price: $" + t.price + "0";
+                    if (t.isValid == 1)
+                    {
+                        toAdd += " Still Valid";
+                    }
+                    else
+                    {
+                        toAdd += " Not Valid";
+                    }
+                    ticketBox.Items.Add(toAdd);
+                }
+            }
         }
 
         private void ticketBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            selectedTicket = userTickets[ticketBox.SelectedIndex];
         }
 
         private void updateUser_Click(object sender, EventArgs e)
@@ -81,6 +120,34 @@ namespace MovieTicketOrdering
             usercardnumber.Text = user.cardNumber;
             
 
+        }
+
+        private void update_Click(object sender, EventArgs e)
+        {
+            ticketBox.Items.Clear();
+            userTickets = selectedTicket.userTickets(user.accountID);
+            foreach (Ticket t in userTickets)
+            {
+                string toAdd = "";
+                toAdd += "Seat Number: " + t.seat;
+                toAdd += " Show Title: " + t.showName;
+                toAdd += " Show Date: " + t.showDate.Substring(0, 9);
+                toAdd += " Price: $" + t.price + "0";
+                if (t.isValid == 1)
+                {
+                    toAdd += " Still Valid";
+                }
+                else
+                {
+                    toAdd += " Not Valid";
+                }
+                ticketBox.Items.Add(toAdd);
+            }
+        }
+
+        private void back_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

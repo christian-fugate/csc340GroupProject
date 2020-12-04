@@ -12,14 +12,14 @@ namespace MovieTicketOrdering
 {
     class order
     {
-        public void createOrder(List<Ticket>tickets, string cardnumber, double price ,string email)
+        public void createOrder(List<Ticket>tickets, string cardnumber, double price , int uID)
         {
             string connStr = "server=157.89.28.130;user=ChangK;database=csc340;port=3306;password=Wallace#409;";
 
             MySql.Data.MySqlClient.MySqlConnection conn = new MySql.Data.MySqlClient.MySqlConnection(connStr);
             Console.WriteLine("Connecting to MySQL...");
             conn.Open();
-            string sql = "Insert into few_order (email, cardNumber, cost) values ('"+email+"','"+cardnumber+"',"+price+");";
+            string sql = "Insert into few_order ( accountNum, cardNumber, cost) values ('"+uID+"','"+cardnumber+"',"+price+");";
             MySql.Data.MySqlClient.MySqlCommand cmd = new MySql.Data.MySqlClient.MySqlCommand(sql, conn);
             MySqlDataReader myReader = cmd.ExecuteReader();
             myReader.Close();
@@ -35,7 +35,7 @@ namespace MovieTicketOrdering
                 try
                 {
 
-                    sql = "INSERT INTO few_tickets (seat, showDate, showName, price, orderNumber) VALUES ("+t.seat+",'"+t.showDate+"','"+t.showName+"',"+t.price+","+orderNumber+");";
+                    sql = "INSERT INTO few_tickets (accID, seat, showDate, showName, price, orderNumber) VALUES ("+t.userID+","+t.seat+",'"+t.showDate+"','"+t.showName+"',"+t.price+","+orderNumber+");";
                     Console.WriteLine(sql);
                     cmd = new MySql.Data.MySqlClient.MySqlCommand(sql, conn);
                     myReader = cmd.ExecuteReader();

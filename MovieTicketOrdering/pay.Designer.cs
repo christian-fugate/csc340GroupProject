@@ -34,6 +34,10 @@
             this.cancelByDate = new System.Windows.Forms.Label();
             this.backSeats = new System.Windows.Forms.Button();
             this.ticketbox = new System.Windows.Forms.ListBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.total = new System.Windows.Forms.Label();
+            this.member = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -47,7 +51,7 @@
             // 
             // confirmPay
             // 
-            this.confirmPay.Location = new System.Drawing.Point(386, 219);
+            this.confirmPay.Location = new System.Drawing.Point(371, 241);
             this.confirmPay.Name = "confirmPay";
             this.confirmPay.Size = new System.Drawing.Size(73, 47);
             this.confirmPay.TabIndex = 2;
@@ -58,7 +62,7 @@
             // userName
             // 
             this.userName.AutoSize = true;
-            this.userName.Location = new System.Drawing.Point(347, 124);
+            this.userName.Location = new System.Drawing.Point(347, 108);
             this.userName.Name = "userName";
             this.userName.Size = new System.Drawing.Size(55, 13);
             this.userName.TabIndex = 3;
@@ -67,7 +71,7 @@
             // cancelByDate
             // 
             this.cancelByDate.AutoSize = true;
-            this.cancelByDate.Location = new System.Drawing.Point(334, 288);
+            this.cancelByDate.Location = new System.Drawing.Point(318, 307);
             this.cancelByDate.Name = "cancelByDate";
             this.cancelByDate.Size = new System.Drawing.Size(173, 13);
             this.cancelByDate.TabIndex = 4;
@@ -85,16 +89,57 @@
             // ticketbox
             // 
             this.ticketbox.FormattingEnabled = true;
-            this.ticketbox.Location = new System.Drawing.Point(88, 108);
+            this.ticketbox.Location = new System.Drawing.Point(38, 108);
             this.ticketbox.Name = "ticketbox";
             this.ticketbox.Size = new System.Drawing.Size(240, 212);
             this.ticketbox.TabIndex = 6;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(347, 210);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(37, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Total: ";
+            // 
+            // total
+            // 
+            this.total.AutoSize = true;
+            this.total.Location = new System.Drawing.Point(383, 210);
+            this.total.Name = "total";
+            this.total.Size = new System.Drawing.Size(37, 13);
+            this.total.TabIndex = 8;
+            this.total.Text = "Total: ";
+            // 
+            // member
+            // 
+            this.member.Location = new System.Drawing.Point(350, 134);
+            this.member.Multiline = true;
+            this.member.Name = "member";
+            this.member.ReadOnly = true;
+            this.member.Size = new System.Drawing.Size(109, 48);
+            this.member.TabIndex = 9;
+            this.member.Text = "You arent a Member - Members get 10% of their purchases";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(350, 324);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(109, 47);
+            this.textBox1.TabIndex = 10;
+            this.textBox1.Text = "Return to User Info and Click \"Update Tickets\" to see these tickets.";
             // 
             // pay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(534, 415);
+            this.ClientSize = new System.Drawing.Size(560, 383);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.member);
+            this.Controls.Add(this.total);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.ticketbox);
             this.Controls.Add(this.backSeats);
             this.Controls.Add(this.cancelByDate);
@@ -116,5 +161,9 @@
         private System.Windows.Forms.Label cancelByDate;
         private System.Windows.Forms.Button backSeats;
         private System.Windows.Forms.ListBox ticketbox;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label total;
+        private System.Windows.Forms.TextBox member;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
