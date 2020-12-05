@@ -14,6 +14,7 @@ namespace MovieTicketOrdering
     {
         List<int> choosen = new List<int>();
         List<int> taken = new List<int>();
+        List<int> owned = new List<int>();
         order order = new order();
         int userID = -1;
         string userName = "-1";
@@ -41,17 +42,36 @@ namespace MovieTicketOrdering
             datePicker.MinDate = datePicker.TodayDate;
             datePicker.MaxDate = datePicker.TodayDate.Add(TimeSpan.FromDays(60.0));
             //datePicker.SetSelectionRange(DateTime.Parse(curshow[0]), DateTime.Parse(curshow[0]).Add(TimeSpan.FromDays(60.0)));
-            
+            owned = order.ownedSeats(curshow[3], datePicker.SelectionRange.Start.ToString("yyyy-MM-dd"), userID);
             taken = order.getSeats(curshow[3], datePicker.SelectionRange.Start.ToString("yyyy-MM-dd"));
             Console.WriteLine("Current Date");
             Console.WriteLine(datePicker.SelectionRange.Start.ToString("yyyy-MM-dd"));
             updateTaken();
+            if (owned.Count >= 4)
+            {
+                panel1.Hide();
+            }
+            else
+            {
+                panel1.Show();
+            }
         }
         private void datePicker_DateChanged(object sender, DateRangeEventArgs e)
         {
             taken = order.getSeats(curshow[3], datePicker.SelectionRange.Start.ToString("yyyy-MM-dd"));
+            Console.WriteLine("Calling Owned");
+            owned = order.ownedSeats(curshow[3], datePicker.SelectionRange.Start.ToString("yyyy-MM-dd"), userID);
             choosen.Clear();
+
             updateTaken();
+            if(owned.Count >= 4)
+            {
+                panel1.Hide();
+            }
+            else
+            {
+                panel1.Show();
+            }
             Console.WriteLine();
         }
         private void backToShows_Click(object sender, EventArgs e)
@@ -70,8 +90,20 @@ namespace MovieTicketOrdering
                     if (b.Text == i + "")
                     {
                         b.BackColor = Color.Red; //this means taken
+                        Console.WriteLine("red");
                     }
                    
+                }
+            }
+            foreach (Button b in panel1.Controls)
+            {
+                foreach(int i in owned)
+                {
+                    if(b.Text == i + "")
+                    {
+                        b.BackColor = Color.Green;//this means owned 
+                        Console.WriteLine("green");
+                    }
                 }
             }
         }
@@ -86,8 +118,11 @@ namespace MovieTicketOrdering
                 }
         private void proceedOrder_Click(object sender, EventArgs e)
         {
-            Form pay = new pay(userID, choosen, userName, curshow, datePicker.SelectionRange.Start.ToString("yyyy-MM-dd"));
-            pay.Show();
+            if (choosen.Count > 0)
+            {
+                Form pay = new pay(userID, choosen, userName, curshow, datePicker.SelectionRange.Start.ToString("yyyy-MM-dd"));
+                pay.Show();
+            }
         }
         //NOTE: i feel like this is where we could cap it at 4, like if(list.length == 4) 
         //change a message box to 0 seats remining or something
@@ -1111,6 +1146,9 @@ namespace MovieTicketOrdering
 
         }
 
-        
+        private void ownedCheck_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

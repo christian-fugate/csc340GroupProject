@@ -138,6 +138,7 @@
             this.backToShows = new System.Windows.Forms.Button();
             this.proceedOrder = new System.Windows.Forms.Button();
             this.datePicker = new System.Windows.Forms.MonthCalendar();
+            this.ownedCheck = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -248,7 +249,7 @@
             this.panel1.Controls.Add(this.seat5);
             this.panel1.Controls.Add(this.seat3);
             this.panel1.Controls.Add(this.seat1);
-            this.panel1.Location = new System.Drawing.Point(306, 95);
+            this.panel1.Location = new System.Drawing.Point(322, 95);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(449, 339);
             this.panel1.TabIndex = 0;
@@ -1377,6 +1378,16 @@
             this.datePicker.TabIndex = 5;
             this.datePicker.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.datePicker_DateChanged);
             // 
+            // ownedCheck
+            // 
+            this.ownedCheck.AutoSize = true;
+            this.ownedCheck.Location = new System.Drawing.Point(438, 144);
+            this.ownedCheck.Name = "ownedCheck";
+            this.ownedCheck.Size = new System.Drawing.Size(191, 13);
+            this.ownedCheck.TabIndex = 320;
+            this.ownedCheck.Text = "You already own 4 tickets for this show";
+            this.ownedCheck.Click += new System.EventHandler(this.ownedCheck_Click);
+            // 
             // seats
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1387,6 +1398,7 @@
             this.Controls.Add(this.backToShows);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.ownedCheck);
             this.Name = "seats";
             this.Text = "Select Your Seats";
             this.Load += new System.EventHandler(this.seats_Load);
@@ -1508,5 +1520,6 @@
         private System.Windows.Forms.Button backToShows;
         private System.Windows.Forms.Button proceedOrder;
         private System.Windows.Forms.MonthCalendar datePicker;
+        private System.Windows.Forms.Label ownedCheck;
     }
 }

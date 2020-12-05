@@ -53,7 +53,40 @@ namespace MovieTicketOrdering
             }
             conn.Close();
         }
-        
+        public List<int> ownedSeats(string show, string selected, int uID)
+        {
+            Console.WriteLine("gettingOwned");
+            List<int> owned = new List<int>();
+            string connStr = "server=157.89.28.130;user=ChangK;database=csc340;port=3306;password=Wallace#409;";
+
+            MySql.Data.MySqlClient.MySqlConnection conn = new MySql.Data.MySqlClient.MySqlConnection(connStr);
+
+            try
+            {
+
+                Console.WriteLine("Connecting to MySQL...");
+                conn.Open();
+                Console.WriteLine(show);
+                string sql = "SELECT seat FROM few_tickets WHERE showDate = '" + selected + "' AND showName = '" + show + "' AND  accID = " + uID + " AND isValid = 1;";   //at one point we are going to need to add "WHERE show name is [insert name]
+                Console.WriteLine(sql);
+                MySql.Data.MySqlClient.MySqlCommand cmd = new MySql.Data.MySqlClient.MySqlCommand(sql, conn);
+                MySqlDataReader myReader = cmd.ExecuteReader();
+                while (myReader.Read())
+                {
+                    owned.Add(myReader.GetInt32(0));
+                    Console.WriteLine(myReader.GetInt32(0));
+
+                }
+                myReader.Close();
+
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            return owned;
+        }
 
         public List<int> getSeats(string show, string selected) //this will be used by seats to get the already taken seats. 
         {
