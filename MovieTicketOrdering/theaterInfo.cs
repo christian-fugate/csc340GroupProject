@@ -38,31 +38,34 @@ namespace MovieTicketOrdering
         
         public void updateTickets()
         {
-            tickets = shows.getAllTickets(shows.shows[showBox.SelectedIndex][3]);
-            ticketBox.Items.Clear();
-            canceled = 0;
-            total = 0;
-            foreach (Ticket t in tickets)
+            if (showBox.SelectedIndex > -1)
             {
-
-                string toAdd = "";
-                if (DateTime.Parse(t.showDate) == showDate.SelectionRange.Start)
+                tickets = shows.getAllTickets(shows.shows[showBox.SelectedIndex][3]);
+                ticketBox.Items.Clear();
+                canceled = 0;
+                total = 0;
+                foreach (Ticket t in tickets)
                 {
-                    if (t.isValid == 0)
+
+                    string toAdd = "";
+                    if (DateTime.Parse(t.showDate) == showDate.SelectionRange.Start)
                     {
-                        canceled++;
-                        toAdd += "Cancelled ";
+                        if (t.isValid == 0)
+                        {
+                            canceled++;
+                            toAdd += "Cancelled ";
+                        }
+                        toAdd += t.showName + " ";
+                        toAdd += t.showDate + " Price:";
+                        toAdd += t.price + " Seate:";
+                        toAdd += t.seat;
+                        ticketBox.Items.Add(toAdd);
+                        total++;
                     }
-                    toAdd += t.showName + " ";
-                    toAdd += t.showDate + " Price:";
-                    toAdd += t.price + " Seate:";
-                    toAdd += t.seat; 
-                    ticketBox.Items.Add(toAdd);
-                    total++;
                 }
+                ticketSales.Text = total + "";
+                totalCanceled.Text = canceled + "";
             }
-            ticketSales.Text = total + "";
-            totalCanceled.Text = canceled + "";
         }
 
         private void showDate_DateChanged(object sender, DateRangeEventArgs e)
