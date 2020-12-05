@@ -91,5 +91,10 @@ namespace MovieTicketOrdering
         {
 
         }
+
+        private void backSeats_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

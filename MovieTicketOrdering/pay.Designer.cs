@@ -32,7 +32,6 @@
             this.confirmPay = new System.Windows.Forms.Button();
             this.userName = new System.Windows.Forms.Label();
             this.cancelByDate = new System.Windows.Forms.Label();
-            this.backSeats = new System.Windows.Forms.Button();
             this.ticketbox = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.total = new System.Windows.Forms.Label();
@@ -78,15 +77,6 @@
             this.cancelByDate.TabIndex = 4;
             this.cancelByDate.Text = "Last Date to Cancel: XX/XX/XXXX";
             // 
-            // backSeats
-            // 
-            this.backSeats.Location = new System.Drawing.Point(25, 13);
-            this.backSeats.Name = "backSeats";
-            this.backSeats.Size = new System.Drawing.Size(75, 23);
-            this.backSeats.TabIndex = 5;
-            this.backSeats.Text = "Back To Seats";
-            this.backSeats.UseVisualStyleBackColor = true;
-            // 
             // ticketbox
             // 
             this.ticketbox.FormattingEnabled = true;
@@ -119,9 +109,9 @@
             this.member.Multiline = true;
             this.member.Name = "member";
             this.member.ReadOnly = true;
-            this.member.Size = new System.Drawing.Size(109, 48);
+            this.member.Size = new System.Drawing.Size(109, 58);
             this.member.TabIndex = 9;
-            this.member.Text = "You are not a Member - Members get 10% of their purchases";
+            this.member.Text = "You are not a Member - Members get 10% off their purchases";
             this.member.TextChanged += new System.EventHandler(this.member_TextChanged);
             // 
             // textBox1
@@ -152,7 +142,6 @@
             this.Controls.Add(this.total);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.ticketbox);
-            this.Controls.Add(this.backSeats);
             this.Controls.Add(this.cancelByDate);
             this.Controls.Add(this.userName);
             this.Controls.Add(this.confirmPay);
@@ -170,7 +159,6 @@
         private System.Windows.Forms.Button confirmPay;
         private System.Windows.Forms.Label userName;
         private System.Windows.Forms.Label cancelByDate;
-        private System.Windows.Forms.Button backSeats;
         private System.Windows.Forms.ListBox ticketbox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label total;

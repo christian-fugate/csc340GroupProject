@@ -57,7 +57,7 @@ namespace MovieTicketOrdering
                         }
                         toAdd += t.showName + " ";
                         toAdd += t.showDate + " Price:";
-                        toAdd += t.price + " Seate:";
+                        toAdd += t.price + " Seat:";
                         toAdd += t.seat;
                         ticketBox.Items.Add(toAdd);
                         total++;
